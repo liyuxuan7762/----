@@ -1,0 +1,112 @@
+# 2023/12/4
+### 1.解决订单无法从ERP传送的ME的问题
+#### 业务描述
+
+> 有一个业务场景是，如果某道工序需要在ERP确认然后再同步到ME中的话。
+> 
+> 1.ERP工序会维护PRT ME_1026,然后SAP ME对应工作中心会维护一个od_partial
+> 
+> 2.订单通过IDOC传到ME的时候，系统会判断上面那两个条件，如果都满足会在table  Z_MEUI5_WRKEXT中增加一个RFC_UPDATE的记录，
+> 3.当MII job同步完成之后，系统会创建0480-xxx-xx的SFC,这个RFC_UPDATE也会清掉变成---。
+> 
+> 但是，有时候业务会遇到一种常见的错误，ERP维护了PRT ME_1026,但是ME中忘记维护OD_PARTIAL了，这个时候系统是不会给在Z表中创建如下记录的，手工处理方式就是干预数据库，然后等MII 后台job运行完成后一切正常。
+> 长远看，可以先问一下Martin,有没有api 重新去更新Table `Z_MEUI5_WRKEXT` ? 如果没有可能需要自己搞一个api去做手工干预类似的动作了。
+
+#### 解决方法
+可以直接写入`Z_MEUI5_WRKEXT`表中，新增一条记录。但是要避免出现重复的记录。
+
+因此检查条件是根据根据订单和`Ex_processing_opration`进行查询，如果存在记录就不用处理，否则设置`Ex_processing_opration`为`RCF_UPDATE`。当写入表之后，系统会将这个单子传送到ME。
+> 需要注意的是，如果`Z_MEUI5_WRKEXT`中本身没有这个单子的记录，那么还需要从ERP手动的将这个单子推送一下才可以。具体的做法如下。
+
+* 首先需要进入到`SAP EASY ACCESS`中，然后进入P22系统登陆。
+* 输入事务代码`SM30`
+* 输入要操作的表名称：`Y02CPO_TRIG_MII`
+* 可以按照条件进行查询，例如按照Plant和Order进行查询
+* 查询出相应的单子以后，把`IDoc Created`字段设置为空即可。
+![MII](/assets/ERPTABLE.PNG)![MII](/assets/ERPTABLE1.PNG)
+> 所有已经发送到ME的单子可以在`MII`中的`Queue Monitor`中进行查看。![MII](/assets/MII.PNG)
+
+### 如何帮用户解锁账号
+
+* 进入NWA
+* 右上角搜索关键字`identity`
+* 找到`Identity Management`
+* 输入用户名后，选择`Disable Password`保存即可
+![MII](/assets/NWA.PNG)
+### 如何查看bin, 小车，箱子之间的绑定关系
+下面的例子是通过查询指定SFC所在的箱子号
+``` sql
+SELECT
+	CM.HANDLE,
+	CM.CONTAINER_DATA_BO,
+	CM.CONTAINER_NUMBER_BO,
+	CM.SFC_BO,
+	CCD.DATA_ATTR AS Z_ST_BIN
+FROM
+	CONTAINER_MEMBER CM
+	LEFT JOIN CONTAINER_CUSTOM_DATA CCD ON CM.CONTAINER_DATA_BO = CCD.CONTAINER_DATA_BO
+	AND CCD.DATA_FIELD = 'Z_ST_BIN'
+WHERE
+	CM.SFC_BO = 'SFCBO:0480, 0480-4313395347-1'
+```
+
+
+| HANDLE                                              | CONTAINER_DATA_BO               | CONTAINER_NUMBER_BO | SFC_BO                       | Z_ST_BIN |
+| --------------------------------------------------- | ------------------------------- | ------------------- | ---------------------------- | -------- |
+| ContainerMemberBO:ContainerDataBO:0480,1500002933,1 | ContainerDataBO:0480,1500002933 | ---                 | SFCBO:0480,0480-4313395347-1 | ---      |
+
+> 下面的结果表明，名字为`0480-4313395347-1`的SFC被存在在了编号为`1500002933`箱子中。
+
+那如何查询`1500002933`在哪个小车和再哪个BIN上呢？使用下面的SQL语句
+
+```sql
+SELECT
+	CM.HANDLE,
+	CM.CONTAINER_DATA_BO,
+	CM.CONTAINER_NUMBER_BO,
+	CM.SFC_BO,
+	CCD.DATA_ATTR AS Z_ST_BIN
+FROM
+	CONTAINER_MEMBER CM
+	LEFT JOIN CONTAINER_CUSTOM_DATA CCD ON CM.CONTAINER_DATA_BO = CCD.CONTAINER_DATA_BO
+	AND CCD.DATA_FIELD = 'Z_ST_BIN'
+WHERE
+	CM.CONTAINER_NUMBER_BO = 'ContainerDataBO:0480,1500002933'
+```
+
+
+| HANDLE                                        | CONTAINER_DATA_BO         | CONTAINER_NUMBER_BO             | SFC_BO | Z_ST_BIN |
+| --------------------------------------------- | ------------------------- | ------------------------------- | ------ | -------- |
+| ContainerMemberBO:ContainerDataBO:0480,3760,1 | ContainerDataBO:0480,3760 | ContainerDataBO:0480,1500002933 | ---    | ST07-A05 |
+
+> 上面的查询结果表明了编号为`1500002933`的箱子被存放在编号为`3760`的小车上。同时这个小车所在的bin为`ST07-A05`
+
+### 接口日志查询
+
+调用的一些`external interface`都会记录日志，所有的日志都存放在`Z_MEUI5_INTF_LOG`表中。因此一些接口出现问题可以查询这个表。
+
+比如查询呼叫AGV的接口日志。
+```sql
+SELECT
+	*
+FROM
+	Z_MEUI5_INTF_LOG
+WHERE
+	INTERFACE_NAME = 'callAgv'
+ORDER BY
+	CREATE_TIEM DESC
+```
+
+
+### 关于报工的一些细节问题
+所谓报工，就是对某一个工序进行确认已经完成，又名`Order Confirm`，`Sfc Complete`等。报工主要需要以下的信息。
+* 订单号或者SFC号
+* 确认数量。用于确认为部分报工还是最终报工
+* 工作中心。会根据工作中心查询工步，判断是否可以报工。例如在氧化线上挂的POD中，只允许报工`C3300716`工作中心对应的`0030`工步。
+
+我们可以在ME的标准界面中搜索`SFC Step Status`，查看当前SFC的对应的所有工步的完成情况。
+
+例如下面的图就是一个SFC每一个工步的状态。如果完全报工了，则状态为`Complete`，所有的数量会进入到下一个工步，状态变为`In Queue`。
+![MII](/assets/REPORT.PNG)
+
+当然也会存在部分报工的情况。如果是部分报工的情况。比如在STEP01中一共有200个PC，但是进行了一次部分报工，数量为10。那么此时SFC状态为STEP01为`In Queue`，并且`In Queue`数量会变成190。同时STEP02也会为`In Queue`，并且`In Queue`数量会变成10。
