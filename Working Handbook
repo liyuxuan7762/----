@@ -110,3 +110,25 @@ ORDER BY
 ![MII](/assets/REPORT.PNG)
 
 当然也会存在部分报工的情况。如果是部分报工的情况。比如在STEP01中一共有200个PC，但是进行了一次部分报工，数量为10。那么此时SFC状态为STEP01为`In Queue`，并且`In Queue`数量会变成190。同时STEP02也会为`In Queue`，并且`In Queue`数量会变成10。
+
+### 2023/12/13
+### 仓位维护以及Buffer的创建
+在M001中，提供了对仓位的创建，状态的维护和查询的功能。
+> 如果需要创建一个新的BIN，可以首先输入对应的Buffer，然后在binId中输入想要创建的bin，然后点击回车即可。
+> 新创建的Bin状态是`NEW`，需要选中这个bin，然后将它的状态设置为可用或者仅限人工绑定两种。
+> 同时还可以在这个里面查询所有的Bin的状态
+
+> 如果当前的Buffer还没有创建的话，会出现`Error code:100030480；Error describe:Buffer [ST99] non existent`。如果出现上述错误需要在ME的标准界面`Storage Location Maintainance`中创建。在Storage Location中输入要创建的Buffer点击保存即可
+> ![MII](/assets/BUFFER.PNG)
+>
+![MII](/assets/BIN.PNG)
+### 如何在标准的ME中查询订单绑定信息
+进入`packing report`，输入要查询的SFC或者订单号。
+![MII](/assets/PACK.PNG)
+
+### 如何创建一个分批的单子
+<video src="/assets/demo.mp4" controls="controls" width="auto" height="300"></video>
+
+
+
+
