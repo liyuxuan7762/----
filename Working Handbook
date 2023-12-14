@@ -129,6 +129,35 @@ ORDER BY
 ### 如何创建一个分批的单子
 <video src="/assets/demo.mp4" controls="controls" width="auto" height="300"></video>
 
+### 在氧化排序界面上查询某一个单子是否缺少挂具
+首先根据订单，进入到H表中查询其对应的挂具类型
+```sql
+SELECT * FROM Z_MEUI5_TASK_H
+WHERE SHOP_ORDER = ''
+```
+根据表中的挂具类型和物料类型，到ME标准界面选择`Tool Group Maintainance`，查询当前挂具组对应物料可以挂的数量
+![MII](/assets/TOOL.PNG)
 
+然后查询当前挂具组下面可以使用的挂具的个数
+```sql
+SELECT
+    TM.HANDLE,
+    TM.TOOL_NUMBER,
+    TM.DESCRIPTION,
+    TM.CREATED_DATE_TIME,
+    TM.MODIFIED_DATE_TIME,
+    S.STATUS,
+    S.STATUS_DESCRIPTION
+FROM
+    TOOL_NUMBER TM
+    INNER JOIN STATUS S ON TM.STATUS_BO = S.HANDLE
+WHERE
+    TM.SITE = '0480'
+    AND TM.TOOL_GROUP_BO = 'ToolGroupBO:0480,DFM-50 HOUSING ANODIZING'
+    AND S.STATUS = '301'
+```
+
+根据下面的公式计算得出所有可用的数量
+``` 当前挂具组对应物料可以挂的数量　*　当前挂具组下可用挂具数量```
 
 
