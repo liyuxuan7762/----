@@ -1,0 +1,456 @@
+## 前端代码记录
+### 1.GridListItem中的布局
+![在这里插入图片描述](https://img-blog.csdnimg.cn/22deb79bd5564665b01e74c02ff45a25.png)
+
+在这个Item中的布局采用的是`VBox`和`HBox`相结合的方式。相关的代码如下：
+
+```xml
+<VBox class="sapUiTinyMargin">
+    <HBox justifyContent="SpaceBetween">
+        <Title
+            text="{ToolNumber}"
+            wrapping="true"
+            titleStyle="H5"
+        />
+        <t:InfoLabel
+            text="{Status}"
+            colorScheme="{
+				path: 'Status',
+				formatter: '.formatter.getStatusColorScheme'
+			}"
+        />
+    </HBox>
+    <Label
+        text="{Description}"
+        wrapping="true"
+        class="sapUiTinyMarginBottom"
+    />
+</VBox>
+```
+> 在这个布局中，首先采用了一个垂直的`VBox`做为一个整体的布局，然后再`VBox`中嵌套了一个`HBox`用于显示挂具号以及状态。
+> **需要注意的是，因为默认情况下挂具号和挂具状态会左对齐，如果想要实现图片中的效果，需要给`HBox`添加一个对其的属性，让它里面的控件两端对齐。`justifyContent="SpaceBetween"`**
+
+
+### 2.GridList中的模式
+GridList中有多种选择模式：
+* `MultiSelect`：多选
+* `SingleSelect`：默认的单选按钮在右边
+* `SingleSelectLeft`：单选按钮在左边
+* `SingleSelectMaster`：不显示单选或者多选框
+* `Delete`：删除
+* `None`：无
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/482b847651424fa08df1216cc49aa311.png)
+
+> 需要注意的是：点击Item和点击Item上的单选或多选按钮触发不同的事件。如果点击单选或多选框，触发的是`onSelectionChange`，而如果点击这个item的其他位置，则触发的是`onPress`事件。
+> **但是**：如果模式为`SingleSelectMaster`，那么点击item的任意位置都会触发`onSelectionChange`，而`onPress`事件则不会在该模式下生效。
+
+
+### 3.自定义Formatter的使用方法
+从上面的项目截图中可以看到，针对Available和Occupied两种状态，info标签的颜色是不一样的。如何实现这一功能，就需要自定义格式化器。格式化器包含在js代码中。
+
+前端代码如下：
+
+```xml
+<t:InfoLabel
+    text="{Status}"
+    colorScheme="{
+		path: 'Status',
+		formatter: '.formatter.getStatusColorScheme'
+	}"
+/>
+```
+> 代码解释：前端代码中`colorScheme`属性需要接受一个整型数字，不同的数字代表不同的颜色。针对这一个属性，我们调用了一个格式化器。其中`path`为我们的输入参数，这个参数会传递到js代码中对应的函数中。`formatter`属性指定的就是我们要调用的js函数。
+
+
+```javascript
+formatter: {
+	getStatusColorScheme: function (sStatus) {
+		// Check the value of Status and return the corresponding colorScheme
+		if (sStatus === "Available") {
+			return 7;
+		} else if (sStatus === "Occupied") {
+			return 3;
+		} else {
+			// Return a default value if none of the above conditions match
+			return "defaultColorScheme";
+		}
+	},
+},
+```
+> 代码解释：在js代码中，我们接受前端传递过来的参数，根据前端传递过来的不同参数返回不同的值，这个返回的值就会直接赋值给`colorScheme`属性，从而根据不同的内容动态的改变不同颜色的标签。
+
+### 4.常用的一些UI5的内部类
+在布局过程中，通常会使用Margin或者Padding，UI5提供了一些内置的布局类，如：
+* sapUiTinyMarginBottom
+
+
+> 其中`Tiny`还可以是`Small`，`Large`等参数
+> `Bottom`还可以是`Top` `Begin` `End`
+
+
+### 5.数据绑定
+在这个项目的代码中，用到了两个JSON模型，涉及到一些关于数据绑定的问题。JSON数据如下：
+
+```javascript
+var oModel = new JSONModel({
+	ToolNumberCollection: [
+		{ ToolNumber: "RP0001", Description: "这是一个测试", Status: "Available", ToolGroup: "Tool Group NO.1" },
+		{ ToolNumber: "RP0002", Description: "这是一个测试", Status: "Available", ToolGroup: "Tool Group NO.1" },
+		{ ToolNumber: "RP0003", Description: "这是一个测试", Status: "Available", ToolGroup: "Tool Group NO.2" },
+		{ ToolNumber: "RP0004", Description: "这是一个测试", Status: "Occupied", ToolGroup: "Tool Group NO.1" },
+		{ ToolNumber: "RP0005", Description: "这是一个测试", Status: "Occupied", ToolGroup: "Tool Group NO.2" },
+		{ ToolNumber: "RP0006", Description: "这是一个测试", Status: "Occupied", ToolGroup: "Tool Group NO.1" },
+		{ ToolNumber: "RP0007", Description: "这是一个测试", Status: "Occupied", ToolGroup: "Tool Group NO.3" },
+		{ ToolNumber: "RP0008", Description: "这是一个测试", Status: "Occupied", ToolGroup: "Tool Group NO.3" },
+		{ ToolNumber: "RP0009", Description: "这是一个测试", Status: "Available", ToolGroup: "Tool Group NO.2" },
+		{ ToolNumber: "RP0010", Description: "这是一个测试", Status: "Available", ToolGroup: "Tool Group NO.2" },
+		{ ToolNumber: "RP0011", Description: "这是一个测试", Status: "Available", ToolGroup: "Tool Group NO.3" },
+
+	]
+});
+
+
+var orders = new JSONModel({
+	Orders: [
+		{ Type: "领头生产订单", OrderNumber: "1603212332", Description: "物料描述：机加工阀体 MFH-22-3-3", Rate: "挂具占比: 25%", precent: 25, Count: "45", Status: "Processing" },
+		{ Type: "可选生产订单", OrderNumber: "1603212331", Description: "物料描述：机加工阀体 MFH-22-3-3", Rate: "挂具占比: 87%", precent: 87, Count: "41", Status: "Available" },
+		{ Type: "可选生产订单", OrderNumber: "1603212333", Description: "物料描述：机加工阀体 MFH-22-3-3", Rate: "挂具占比: 57%", precent: 57, Count: "35", Status: "Available" },
+		{ Type: "可选生产订单", OrderNumber: "1603212331", Description: "物料描述：机加工阀体 MFH-22-3-3", Rate: "挂具占比: 54%", precent: 54, Count: "41", Status: "Available" },
+		{ Type: "可选生产订单", OrderNumber: "1603212333", Description: "物料描述：机加工阀体 MFH-22-3-3", Rate: "挂具占比: 25%", precent: 25, Count: "35", Status: "Available" },
+		{ Type: "可选生产订单", OrderNumber: "1603212331", Description: "物料描述：机加工阀体 MFH-22-3-3", Rate: "挂具占比: 32%", precent: 32, Count: "41", Status: "Available" },
+		{ Type: "可选生产订单", OrderNumber: "1603212333", Description: "物料描述：机加工阀体 MFH-22-3-3", Rate: "挂具占比: 56%", precent: 56, Count: "35", Status: "Available" },
+		{ Type: "可选生产订单", OrderNumber: "1603212331", Description: "物料描述：机加工阀体 MFH-22-3-3", Rate: "挂具占比: 43%", precent: 43, Count: "41", Status: "Available" },
+		{ Type: "可选生产订单", OrderNumber: "1603212333", Description: "物料描述：机加工阀体 MFH-22-3-3", Rate: "挂具占比: 54%", precent: 54, Count: "35", Status: "Available" },
+	]
+});
+this.getView().setModel(orders, "orders");
+
+this.getView().setModel(oModel);
+```
+上面这个例子中创建了两个模型，并设置到了view中。在xml中我们要将这些模型绑定到对应的List中去。对于第一个模型，因为设置的时候没有设置名字，那么名字就为空`this.getView().setModel(oModel)`
+
+那么在xml代码中应该采用下面的方式进行数据绑定
+
+```xml
+<f:GridList
+    id="toolList2"
+    items="{
+			path: '/ToolNumberCollection',
+			sorter: {
+				path: 'ToolGroup',
+				group: true
+			},
+	}"
+    mode="SingleSelectMaster"
+    selectionChange="onselectionchange"
+>"
+```
+需要注意`path: '/ToolNumberCollection'`
+
+此外，我们要想访问模型对应的某一些字段的值，应该如下操作：
+
+```xml
+<Label
+    text="{Description}"
+    wrapping="true"
+    class="sapUiTinyMarginBottom"
+/>
+```
+对于第二个模型，因为我们已经设置了它的名字`this.getView().setModel(orders, "orders")`，因此在xml中进行数据绑定的时候就需要写模型的名字，如下所示：
+
+```xml
+<List
+    id="orderList3"
+    items="{orders>/Orders}"
+    growing="true"
+    growingThreshold="3"
+    itemPress=".onOrderItemPress"
+>
+```
+>关于`items="{orders>/Orders}"`的解释：这一行代码实际上绑定了orders对象的Orders数组，让orders成为一个遍历器，依次遍历Orders数组中的每一个元素。
+>如果用Java代码来说明的话。类似于：
+>```java
+>for(Order order : orders) {
+>.....
+>}
+>```
+>其中`items="{orders>/Orders}"`中的`orders`就相当于Java代码中的`order`
+
+### 6.Text和Label以及Title控件等文字控件
+* Label控件常用属性
+	* `text` 用于设置Label的内容
+	* `design` 用于设置文字样式。只有两个选项`Standard` `Bold`
+* Text控件常用属性
+	* `text` 用于设置Label的内容
+* Title控件常用属性
+	* `text` 用于设置Label的内容
+	* `titleStyle` 可以设置标题的层级，和HTML中的h1-h6保持一致。
+
+
+上述的文字控件实际上对文字样式的调整非常有限，在某些情况下需要更加复杂的文字样式定义。比如在本项目中，我们想让数量单位`PC`的文字更细一些，采用上述的控件就不可以了。我们可以使用`FormattedText`控件。这个控件可以让你直接插入HTML代码，可以使用`span`标签实现对样式的控制。实现文字粗细的代码如下：
+
+```xml
+ <FormattedText
+     htmlText="&lt;span style='font-weight:100; font-size:14px'>PC&lt;/span>"
+     width="24px"
+     textAlign="Right"
+ />
+```
+> 需要注意的是，HTML代码中的标签的```<```这个符号需要转义，否则会报错
+
+### 7.图标控件
+默认情况下的图标颜色都是黑白的，有些情况下，可能会想要修改图标的颜色，可以使用`color`属性来控制颜色，支持似乎用RGB坐标。
+
+```xml
+<core:Icon
+    size="2.7rem"
+    src="{
+			path: 'orders>Type',
+			formatter: '.formatter.getIconForType'
+		}"
+    class="sapUiSmallMarginBegin"
+    color="rgb(52,97,135)"
+/>
+```
+### 8.进度条控件
+在UI5中提供了进度条控件来显示事件的进度。该控件的主要属性有一下几个：
+* `percentValue` 实际的百分比 用于显示进度条的百分比
+* `displayValue` 显示的百分比，在进度条上会以文字的方式显示百分比，这个属性控制显示的数值
+* `state`状态，和ValueState，可以配合formatter实现不同的百分比显示不同颜色的进度条
+
+```xml
+<ProgressIndicator
+    percentValue="{orders>precent}"
+    displayValue="{orders>precent}%"
+    state="{path: 'orders>precent', formatter: '.formatter.getStateForPercentValue'}"
+    width="15%"
+/>
+```
+![在这里插入图片描述](https://img-blog.csdnimg.cn/1a5433597c5949898e410aecb68102d5.png)
+### 9.获取自定义控件中绑定的数据
+在这个项目中有这样一个需求，当点击提交按钮后，系统会从挂具List和订单List中找到所有的勾选的Item，然后获取到Item中的相关内容，例如挂具号，订单号，订单状态等信息。通常获取这种方式有两种。第一种就是一层一层的获取到对应的标签，然后在获取标签中的相关属性。例如获取挂具号：
+
+下面是xml代码：
+
+```xml
+<f:GridListItem>
+    <VBox
+        height="100%"
+        justifyContent="SpaceBetween"
+    >
+        <layoutData>
+            <FlexItemData
+                growFactor="1"
+                shrinkFactor="0"
+            />
+            <!-- Don't shrink below minimum size. Fill space if available. -->
+        </layoutData>
+        <VBox class="sapUiTinyMargin">
+            <HBox justifyContent="SpaceBetween">
+                <Title
+                    text="{ToolNumber}"
+                    wrapping="true"
+                    titleStyle="H5"
+                />
+                <t:InfoLabel
+                    text="{Status}"
+                    colorScheme="{
+						path: 'Status',
+						formatter: '.formatter.getStatusColorScheme'
+					}"
+                />
+            </HBox>
+            <Label
+                text="{Description}"
+                wrapping="true"
+                class="sapUiTinyMarginBottom"
+            />
+        </VBox>
+    </VBox>
+</f:GridListItem>
+```
+从代码中可以看出结构如下：
+
+```xml
+<VBox>
+    <VBox >
+        <HBox >
+            <Title/>
+            <t:InfoLabel/>
+        </HBox>
+        <Label/>
+    </VBox>
+</VBox>
+```
+我们要获取到Title，所以需要使用`selectedToolNumberItem.getContent()[0].getItems()[0].getItems()[0].getItems()[0].getText();`来一层一层的访问到对应的Title标签，在使用`getText()`从标签中获取对应的Text属性的值。
+
+> 上面的例子可以看出，这种方式是比较麻烦的，而且如果xml的结构比较复杂，那么采用获取标签的这种方法就非常乱了。
+
+
+因此，针对这种情况，我们可以使用另一种方式，通过使用`getBindingContext`来实现。
+
+```javascript
+var toolNumber = selectedToolNumberItem.getBindingContext().getProperty("ToolNumber");
+```
+这里，通过`getBindingContext`获取到当前选中的`selectedToolNumberItem`所对应的绑定的JSON模型，然后再通过`getProperty("ToolNumber")`获取到对应JSON模型的对应字段。采用这种方式使得我们不需要再去关心xml的结构问题，更加快速和方便的获取再一些自定义布局组件中相关组件的属性值。
+
+同样的例子，在下面的这个例子中，由于我们采用了`CustomListItem`组件，并且里面的结构相对比较复杂，如果我们采用获取标签的方式，就会导致我们的代码非常复杂且易读性降低。
+
+```xml
+<CustomListItem type="Active">
+    <VBox
+        class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom sapUiTinyMarginBottom"
+    >
+        <Label
+            text="{orders>Type}"
+            design="Bold"
+            wrapping="true"
+        />
+    </VBox>
+    <HBox justifyContent="SpaceBetween">
+        <HBox>
+            <core:Icon
+                size="2.7rem"
+                src="{
+					path: 'orders>Type',
+					formatter: '.formatter.getIconForType'
+				}"
+                class="sapUiSmallMarginBegin"
+                color="rgb(52,97,135)"
+            />
+            <VBox
+                class="sapUiSmallMarginBegin sapUiTinyMarginTop"
+            >
+                <Title
+                    text="{orders>OrderNumber}"
+                    class="sapUiTinyMarginTop"
+                    titleStyle="H4"
+                    wrapping="true"
+                />
+            </VBox>
+        </HBox>
+        <VBox class="sapUiSmallMarginEnd">
+            <Title
+                text="{orders>Count}"
+                titleStyle="H2"
+                wrapping="true"
+            />
+            <FormattedText
+                htmlText="&lt;span style='font-weight:100; font-size:14px'>PC&lt;/span>"
+                width="24px"
+                textAlign="Right"
+            />
+        </VBox>
+    </HBox>
+    <VBox class="sapUiSmallMarginBegin sapUiTinyMarginTop">
+        <HBox justifyContent="SpaceBetween">
+            <Label
+                text="{orders>Description}"
+                wrapping="true"
+            />
+            <t:InfoLabel
+                text="{orders>Status}"
+                colorScheme="{
+					parts: ['orders>Status'],
+					formatter: '.formatter.getStatusState'
+				}"
+                icon="{
+					parts: ['orders>Status'],
+					formatter: '.formatter.getIconForOrder'
+				}"
+                class="sapUiSmallMarginEnd"
+            />
+        </HBox>
+        <HBox
+            justifyContent="SpaceBetween"
+            class="sapUiSmallTinyTop"
+        >
+            <Label
+                text="{orders>Rate}"
+                wrapping="true"
+            />
+            <Label
+                text="Storage Location"
+                class="sapUiSmallMarginEnd"
+                design="Bold"
+                wrapping="true"
+            />
+        </HBox>
+        <ProgressIndicator
+            percentValue="{orders>precent}"
+            displayValue="{orders>precent}%"
+            state="{path: 'orders>precent', formatter: '.formatter.getStateForPercentValue'}"
+            width="15%"
+        />
+    </VBox>
+</CustomListItem>
+```
+> 在上面的xml中如果我们想获取到订单号，采用获取标签的方式是不现实的，因此还是需要使用`getBindingContext`方法来实现，下面是对应的代码。
+
+```javascript
+var oContext = selectedListItems[i].getBindingContext("orders");
+var sOrderNumber = oContext.getProperty("OrderNumber");
+```
+
+### 10.如何向前端控件中的事件函数传递参数
+在下面的代码中，给`ObjectStatus`控件的`press`事件添加了一个事件处理函数`rackStatusPress`，这个事件处理函数想要显示出绑定的JSON模型的一些属性，我们可以将这些属性以参数的方式传递给事件处理函数，事件处理函数只需要显示即可。
+```xml
+<m:ObjectStatus 
+    class="wbObjectStatus" 
+    text="{path: 'workBasket>RackStatus', formatter: '.columnFormatter.getRackStatus'}" 
+    inverted="true"
+    active="true" 
+    state="{path: 'workBasket>RackStatus', formatter: '.columnFormatter.getRackStatusState'}" 
+    icon="{path: 'workBasket>RackStatus', formatter: '.columnFormatter.getRackStatusIcon'}"
+    press="rackStatusPress(${workBasket>containerType})"
+/> 
+```
+> 在这个代码中，我们使用了`${workBasket>containerType}`形式，给事件处理函数传递了一个参数，这样的话，在事件处理函数中，就可以直接读取到要显示的属性的值。
+
+```JavaScript
+/**
+ * Anodizing rack status press event. 
+ * By pressing the rack status object status, the system will show the tool group and status 
+ * 2024/1/18
+ * @author CN0YXNL
+ */
+rackStatusPress : function(toolGroup) {
+
+    var closeButton = new sap.m.Button({
+        text: "Close",
+        press: function() {
+        dialog.close();
+        }
+    });
+
+    var vbox = new sap.m.VBox({
+        items: [
+        new sap.m.Title({
+            level: sap.ui.core.TitleLevel.H1,
+            text: "DFM12/16-HOUSING ANODIZING"
+        }),
+        new sap.m.ObjectStatus({
+            text: "RA0012",
+            state: sap.ui.core.ValueState.Success,
+            icon: "sap-icon://error",
+            inverted: true
+        }),
+        new sap.m.ObjectStatus({
+            text: "RA0015",
+            state: sap.ui.core.ValueState.Error,
+            icon: "sap-icon://error",
+            inverted: true
+        })
+        ]
+    });
+
+    var dialog = new sap.m.Dialog({
+        title: "挂具详情",
+        content: vbox,
+        buttons: [closeButton]
+    });
+
+    dialog.open();
+}
+```

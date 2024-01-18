@@ -1,0 +1,394 @@
+# 1. CheckBox控件
+## 1.1 最普通的CheckBox
+![在这里插入图片描述](https://img-blog.csdnimg.cn/15dcac6cabff4956b910da70ee18a325.png)
+```xml
+<CheckBox text="Option a" selected="true" />
+```
+> 如果需要设置选中状态，需要设置```selected```属性为```true```
+
+## 1.2 部分选中CheckBox
+![在这里插入图片描述](https://img-blog.csdnimg.cn/bcd58ea829b746049024792260acddc7.png)
+
+```xml
+<CheckBox text="Option partially selected" selected="true" partiallySelected="true" />
+```
+## 1.3 带有不同颜色的CheckBox
+![在这里插入图片描述](https://img-blog.csdnimg.cn/f663017d18ca46aaa395bb81d5efcb8b.png)
+> 通过设置不同的```valueState```来使CheckBox显示不同的颜色
+> * ```Warning```为橙色
+> * ```Error```为红色
+> * ```Information```为蓝色
+## 1.4 Wrapping属性的CheckBox
+对于一些文字比较长的CheckBox，默认的```wrapping```属性为```false```，导致文字显示不全，如下图所示：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/3f108f5f3f3e489db8e6f64fbec3ccf2.png)
+当设置```wrapping```属性为```true```时，显示不全会自动换行，保证所有的内容都可以显示出来，如下图所示：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/a31a3cc7b1dc4ad68d5d0fa6c0c6e024.png)
+# 2. 拾色器Color Picker
+可以结合ValueHelper实现在输入框中点击后弹出一个拾色器，选择相应颜色后将颜色信息填充到输入框中。前端界面如下：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/9d4b7789c2fb4913a7f54cb71be6e132.png)
+前端代码如下：
+
+```xml
+<mvc:View
+		xmlns:mvc="sap.ui.core.mvc"
+		controllerName="sap.ui5.walkthrough.controller.App"
+		xmlns="sap.m">
+	<Table id="samplesTable" headerText="Color Picker in a Popover" class="sapUiLargeMarginBottom">
+		<columns>
+			<Column width="30%">
+				<Text text="Description"/>
+			</Column>
+			<Column>
+				<Text text="Click 'Value help' icon to select color"/>
+			</Column>
+			<Column>
+				<Text text="Value from liveChange event"/>
+			</Column>
+		</columns>
+		<ColumnListItem>
+			<cells>
+				<Label text='Default displayMode'/>
+				<Input id="colorD"
+					type="Text"
+					width="200px"
+					placeholder="Enter Color ..."
+					showValueHelp="true"
+					valueHelpRequest="openDefaultModeSample"
+					change="handleInputChange"/>
+			</cells>
+		</ColumnListItem>
+	</Table>
+</mvc:View>
+```
+> * ```showValueHelp="true"```如果需要实现点击输入框弹出某个hover的界面，这一个属性需要设置为```true```
+> * ```valueHelpRequest="openDefaultModeSample"```这一个属性设置的是当点击了输入框后，要执行的代码，在这个代码里面需要编写弹出拾色器的代码
+> * ```change="handleInputChange"```这一行代码是当用户在拾色器中选择完颜色后执行的代码，在这个例子中就是将拾色器中选择的颜色显示到输入框中的功能
+
+Jscript代码如下：
+
+```javascript
+sap.ui.define([
+	'sap/ui/core/library',
+	'sap/ui/core/mvc/Controller',
+	'sap/ui/unified/ColorPickerPopover',
+	'sap/ui/unified/library',
+	'sap/m/MessageToast'
+], function (coreLibrary, Controller, ColorPickerPopover, unifiedLibrary, MessageToast) {
+	"use strict";
+	var ColorPickerMode = unifiedLibrary.ColorPickerMode,
+		ValueState = coreLibrary.ValueState;
+	return Controller.extend("sap.ui5.walkthrough.controller.App", {
+		onInit: function () {
+			// the input id from which the ColorPickerPopover was opened
+			this.inputId = "";
+		},
+		onExit: function () {
+			// Destroy popovers if any
+			if (this.oColorPickerPopover) {
+				this.oColorPickerPopover.destroy();
+			}
+		},
+		openDefaultModeSample: function (oEvent) {
+			this.inputId = oEvent.getSource().getId();
+			// 判断拾色器是否已经弹出了，如果已经弹出了，则不再重复弹出
+			if (!this.oColorPickerPopover) {
+				// 创建一个新的拾色器对象并设置相关的属性
+				this.oColorPickerPopover = new ColorPickerPopover("oColorPickerPopover", {
+					colorString: "blue",
+					mode: ColorPickerMode.HSL,
+					change: this.handleChange.bind(this)
+				});
+			}
+			// 显示拾色器
+			this.oColorPickerPopover.openBy(oEvent.getSource());
+		},
+		// 当用户在拾色器界面上点击确定后触发这个事件
+		handleChange: function (oEvent) {
+			var oView = this.getView(),
+				oInput = oView.byId(this.inputId);
+			oInput.setValue(oEvent.getParameter("colorString"));
+			oInput.setValueState(ValueState.None);
+			this.inputId = "";
+			MessageToast.show("Chosen color string: " + oEvent.getParameter("colorString"));
+		}
+	});
+});
+
+```
+# 3. ComboBox控件
+需要注意ComboBox和Select组件的区别：
+* ComboBox允许用户手动的去填写内容，而Select组件用户只能通过下拉列表选择。
+* 此外，ComboBox还提供了非常强大的搜索功能和内容验证功能。
+* 通常情况下，如果没有什么特殊需求，使用Select更加方便快捷。
+### 3.1 最简单的ComboBox
+
+```xml
+<mvc:View
+	height="100%"
+	controllerName="sap.m.sample.ComboBox.controller.ComboBox"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<Page showHeader="false" class="sapUiContentPadding">
+		<content>
+			<ComboBox
+				items="{
+					path: '/CountriesCollection',
+					sorter: { path: 'text' }
+				}">
+				<core:Item key="{key}" text="{text}" />
+			</ComboBox>
+		</content>
+	</Page>
+</mvc:View>
+```
+
+```javascript
+sap.ui.define([
+		'sap/ui/core/mvc/Controller',
+		'sap/ui/model/json/JSONModel'
+	], function(Controller, JSONModel) {
+	"use strict";
+
+	return Controller.extend("sap.m.sample.ComboBox.controller.ComboBox", {
+
+		onInit: function () {
+
+			// set explored app's demo model on this sample
+			var oModel = new JSONModel(sap.ui.require.toUrl("sap/ui/demo/mock/countriesExtendedCollection.json"));
+			this.getView().setModel(oModel);
+		}
+	});
+});
+```
+> 通过设置```item```属性，可以实现根据某一个属性进行排序，例如：
+> `items="{
+					path: '/CountriesCollection',
+					sorter: { path: 'text' }
+				}"`就是对text字段按照升序进行排列
+> 如果想进行降序操作，则需要设置：
+> ```sorter: { path: 'text', descending: true}```
+
+> 注意ComboBox和Select的区别，ComboBox的内容键盘是可以编辑的，当然可以通过编写代码让用户只能输入
+### 3.2 同时显示两列的ComboBox
+![在这里插入图片描述](https://img-blog.csdnimg.cn/cab685a2197f442abe6358c59f36dc1b.png)
+
+> 只需要设置```showSecondaryValues= "true"```并且在每一个Item中都添加一个额外的属性```additionalText = "{key}"```即可
+
+> ComboBox的自动搜索功能同时也作用于双列的ComboBox
+
+
+### 3.3 ComboBox的自动搜索功能
+> The default filtering is 'starts with per term', which filters by the beginning of every word in every column.
+> 系统默认的搜索功能是从每一个单词的进行开头匹配。
+> 该匹配可以作用于双列和单列ComboBox
+
+准备一个JSON数据如下：
+
+```javascript
+CountriesCollection : [
+	{text : 'China', key : 'CN', region : 'Asia'},
+	{text : 'United States', key : 'US', region : 'America'},
+	{text : 'Japan', key : 'JP', region : 'Asia'},
+	{text : 'Korean', key : 'KO', region : 'Asia'},
+	{text : 'Iceland', key : 'IC', region : 'Europe'},
+]
+```
+
+默认的匹配规则是从选项中每一个单词的开头进行匹配，比如下面的有Japan，Iceland，此时输入an，则不会有匹配项，因为不存在以an开头的单词，我们可以自定义匹配项，使得只要单词中包含an就匹配。具体代码如下：
+
+```xml
+<mvc:View
+	controllerName="sap.ui5.walkthrough.controller.App"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+>
+	<ComboBox
+		id="combobox1"
+		showSecondaryValues="true"
+		items="{
+			path: '/CountriesCollection',
+			sorter: {
+				path: 'text'
+			}
+		}"
+	>
+		<core:ListItem
+			key="{key}"
+			text="{text}"
+			additionalText="{key}"
+		/>
+	</ComboBox>
+</mvc:View>
+```
+
+```javascript
+sap.ui.define([
+	'sap/ui/core/library',
+	'sap/ui/core/mvc/Controller',
+	'sap/ui/unified/ColorPickerPopover',
+	'sap/ui/unified/library',
+	'sap/m/MessageToast',
+	'sap/ui/model/json/JSONModel'
+], function (coreLibrary, Controller, ColorPickerPopover, unifiedLibrary, MessageToast, JSONModel) {
+	"use strict";
+	return Controller.extend("sap.ui5.walkthrough.controller.App", {
+		onInit: function () {
+			// set explored app's demo model on this sample
+			var oModel = new JSONModel({
+				CountriesCollection : [
+					{text : 'China', key : 'CN'},
+					{text : 'America', key : 'US'},
+					{text : 'Japan', key : 'JP'},
+					{text : 'Korean', key : 'KO'},
+					{text : 'Iceland', key : 'IC'},
+
+				]
+			});
+			this.getView().setModel(oModel);
+			this.getView().byId("combobox1").setFilterFunction(function(sTerm, oItem) {
+				return oItem.getText().match(new RegExp(sTerm, "i")) || oItem.getKey().match(new RegExp(sTerm, "i"));
+			});
+		},
+	});
+});
+
+```
+> ```return oItem.getText().match(new RegExp(sTerm, "i")) || oItem.getKey().match(new RegExp(sTerm, "i"))```详解
+>在这行代码中，`sTerm` 表示过滤条件，它是用户在 ComboBox 中输入的文本。`oItem` 表示 ComboBox 的每个选项项，用于与>过滤条件进行比较。
+`this.getView().byId("combobox1")` 是获取 ComboBox 控件的实例，`.setFilterFunction()` 是设置过滤函数的方法。在该函数中，通过 `oItem.getText()` 获取选项的文本值，使用 `new RegExp(sTerm, "i")` 创建了一个不区分大小写的正则表达式对象。然后使用 `match()` 方法将选项的文本值与过滤条件进行匹配，如果匹配成功，则返回 `true`，表示该选项应该被显示；否则返回 `false`，表示该选项应该被隐藏。
+这样设置过滤函数后，当用户在 ComboBox 中输入文本时，会根据过滤函数的逻辑对选项进行过滤，并只显示与过滤条件匹配的选项。
+
+如果我们要实现匹配以...为开头的条件的话，可以修改```setFilterFunction```函数中代码如下：
+
+```javascript
+return oItem.getText().match(new RegExp("^" + sTerm, "i")) || oItem.getKey().match(new RegExp("^" + sTerm, "i"));
+```
+
+> 规则解释： 在正则表达式中，`^` 符号具有两种不同的含义，具体取决于它在正则表达式中的位置和上下文。
+> 1. 如果 `^` 符号位于正则表达式的开头，它表示匹配输入字符串的开头位置。例如，正则表达式 `^Hello` 表示匹配以 "Hello" 开头的字符串。
+> 2. 如果 `^` 符号位于方括号 `[ ]` 内的开头，它表示否定字符集。例如，正则表达式 `[^0-9]` 表示匹配除数字之外的任何字符。 总结起来，`^` 符号在正则表达式中具有定位和否定字符集的功能，具体含义取决于它的上下文和位置。
+### 3.4 ComboBox的分组功能
+在ComboBox中，可以根据某一个字段进行分组显示，上面的JSON文件中的```region```字段为不同国家所属的大洲，我们可以根据这个进行分类。具体代码如下，只需要在```sorter```中进行配置即可。
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2a96bac42b3f48e996fd929c471321db.png)
+
+
+```xml
+<ComboBox
+	id="combobox1"
+	showSecondaryValues="true"
+	items="{
+		path: '/CountriesCollection',
+		sorter: {
+			path: 'region',
+			group: true
+		}
+	}"
+>
+	<core:ListItem
+		key="{key}"
+		text="{text}"
+		additionalText="{key}"
+	/>
+</ComboBox>
+```
+### 3.5 ComboBox的数据验证功能
+我们可以通过代码实现只允许用户输入绑定数据源中已有数据，如果输入的数据不在数据源中，则提示用户输入非法的数据。
+在前端页面部分，我们只需要添加一个```change```事件即可。具体代码如下：
+
+* 获取到用户输入的内容
+* 获取到用户输入内容对应的key
+* 如果key为空，并且用户输入的内容不为空，则说明用户输入了非法的数据
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2c7851b4d2fb4d34a001abae5ba140a7.png)
+
+
+```xml
+<mvc:View
+	controllerName="sap.ui5.walkthrough.controller.App"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+>
+	<ComboBox
+		id="combobox1"
+		showSecondaryValues="true"
+		items="{
+			path: '/CountriesCollection',
+			sorter: {
+				path: 'region',
+				group: true
+			}
+		}"
+		change="handleChange"
+	>
+		<core:ListItem
+			key="{key}"
+			text="{text}"
+			additionalText="{key}"
+		/>
+	</ComboBox>
+</mvc:View>
+```
+在对应的js代码中，需要实现这个```change```事件，具体代码如下：
+
+```javascript
+sap.ui.define([
+	'sap/ui/core/library',
+	'sap/ui/core/mvc/Controller',
+	'sap/ui/unified/ColorPickerPopover',
+	'sap/ui/unified/library',
+	'sap/m/MessageToast',
+	'sap/ui/model/json/JSONModel',
+	"sap/ui/core/ValueState"
+], function (coreLibrary, Controller, ColorPickerPopover, unifiedLibrary, MessageToast, JSONModel) {
+	"use strict";
+	var ValueState = coreLibrary.ValueState;
+	
+	return Controller.extend("sap.ui5.walkthrough.controller.App", {
+		onInit: function () {
+
+			// set explored app's demo model on this sample
+			var oModel = new JSONModel({
+				CountriesCollection : [
+					{text : 'China', key : 'CN', region : 'Asia'},
+					{text : 'United States', key : 'US', region : 'America'},
+					{text : 'Japan', key : 'JP', region : 'Asia'},
+					{text : 'Korean', key : 'KO', region : 'Asia'},
+					{text : 'Iceland', key : 'IC', region : 'Europe'},
+
+				]
+			});
+			this.getView().setModel(oModel);
+
+
+			this.getView().byId("combobox1").setFilterFunction(function(sTerm, oItem) {
+				return oItem.getText().match(new RegExp("^" + sTerm, "i")) || oItem.getKey().match(new RegExp("^" + sTerm, "i"));
+			});
+		},
+
+		handleChange : function (oEvent) {
+			// 获取当前的ComboBox
+			var oValidatedComboBox = oEvent.getSource();
+			// 获取用户输入对应的key，如果用户输入的内容不在ComboBox所绑定的数据源中，这个为空
+			var sSelectedKey = oValidatedComboBox.getSelectedKey();
+			// 获取用户输入的内容
+			var sValue = oValidatedComboBox.getValue();
+
+			// 如果用户输入了内容，并且还不在数据源中
+			if(sValue && !sSelectedKey) {
+				oValidatedComboBox.setValueState(ValueState.Error);
+				oValidatedComboBox.setValueStateText("Please enter a valid country!");
+			} else {
+				oValidatedComboBox.setValueState(ValueState.None);
+			}
+		}
+	});
+});
+
+```
+### 3.6 带有删除按钮的ComboBox
+当ComboBox中有内容的时候，会显示一个删除按钮。
+![在这里插入图片描述](https://img-blog.csdnimg.cn/1cb9eb6e81be42e69b9daaf7c38449cc.png)
+直接在xml中给ComboBox添加一个```showClearIcon='true'```的属性即可。
+

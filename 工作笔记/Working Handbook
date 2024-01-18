@@ -23,8 +23,8 @@
 * 输入要操作的表名称：`Y02CPO_TRIG_MII`
 * 可以按照条件进行查询，例如按照Plant和Order进行查询
 * 查询出相应的单子以后，把`IDoc Created`字段设置为空即可。
-![MII](/assets/ERPTABLE.PNG)![MII](/assets/ERPTABLE1.PNG)
-> 所有已经发送到ME的单子可以在`MII`中的`Queue Monitor`中进行查看。![MII](/assets/MII.PNG)
+![MII](assets/ERPTABLE.PNG)![MII](assets/ERPTABLE1.PNG)
+> 所有已经发送到ME的单子可以在`MII`中的`Queue Monitor`中进行查看。![MII](assets/MII.PNG)
 
 ### 如何帮用户解锁账号
 
@@ -32,7 +32,7 @@
 * 右上角搜索关键字`identity`
 * 找到`Identity Management`
 * 输入用户名后，选择`Disable Password`保存即可
-![MII](/assets/NWA.PNG)
+![MII](assets/NWA.PNG)
 ### 如何查看bin, 小车，箱子之间的绑定关系
 下面的例子是通过查询指定SFC所在的箱子号
 ``` sql
@@ -107,7 +107,7 @@ ORDER BY
 我们可以在ME的标准界面中搜索`SFC Step Status`，查看当前SFC的对应的所有工步的完成情况。
 
 例如下面的图就是一个SFC每一个工步的状态。如果完全报工了，则状态为`Complete`，所有的数量会进入到下一个工步，状态变为`In Queue`。
-![MII](/assets/REPORT.PNG)
+![MII](assets/REPORT.PNG)
 
 当然也会存在部分报工的情况。如果是部分报工的情况。比如在STEP01中一共有200个PC，但是进行了一次部分报工，数量为10。那么此时SFC状态为STEP01为`In Queue`，并且`In Queue`数量会变成190。同时STEP02也会为`In Queue`，并且`In Queue`数量会变成10。
 
@@ -119,15 +119,15 @@ ORDER BY
 > 同时还可以在这个里面查询所有的Bin的状态
 
 > 如果当前的Buffer还没有创建的话，会出现`Error code:100030480；Error describe:Buffer [ST99] non existent`。如果出现上述错误需要在ME的标准界面`Storage Location Maintainance`中创建。在Storage Location中输入要创建的Buffer点击保存即可
-> ![MII](/assets/BUFFER.PNG)
+> ![MII](assets/BUFFER.PNG)
 >
-![MII](/assets/BIN.PNG)
+![MII](assets/BIN.PNG)
 ### 如何在标准的ME中查询订单绑定信息
 进入`packing report`，输入要查询的SFC或者订单号。
-![MII](/assets/PACK.PNG)
+![MII](assets/PACK.PNG)
 
 ### 如何创建一个分批的单子
-<video src="/assets/demo.mp4" controls="controls" width="auto" height="300"></video>
+<video src="assets/demo.mp4" controls="controls" width="auto" height="300"></video>
 
 ### 在氧化排序界面上查询某一个单子是否缺少挂具
 首先根据订单，进入到H表中查询其对应的挂具类型
@@ -136,7 +136,7 @@ SELECT * FROM Z_MEUI5_TASK_H
 WHERE SHOP_ORDER = ''
 ```
 根据表中的挂具类型和物料类型，到ME标准界面选择`Tool Group Maintainance`，查询当前挂具组对应物料可以挂的数量
-![MII](/assets/TOOL.PNG)
+![MII](assets/TOOL.PNG)
 
 然后查询当前挂具组下面可以使用的挂具的个数
 ```sql
@@ -163,4 +163,4 @@ WHERE
 
 ### Eclipse 如何解锁
 用NWA账号进到 NWA 在identity里面可以解锁
-![MII](/assets/UNLOCK.PNG)
+![MII](assets/UNLOCK.PNG)

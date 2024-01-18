@@ -1,0 +1,704 @@
+# UI5常用控件
+
+## 1.Input组
+
+### 1.1 Feed Input控件
+
+这个控件通常是用来显示发布评论的。它可以显示用户头像，并且在内容输入方面，可以设置PlaceHolder，自增扩展大小，限制行数，以及限制字数等诸多设置。
+
+#### 1.1.1 没有头像的输入框
+![在这里插入图片描述](https://img-blog.csdnimg.cn/059ad36fd2e845e7861d52b7543e92e3.png)
+
+
+对应的代码
+
+```xml
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	controllerName="sap.ui5.walkthrough.controller.App"
+	xmlns="sap.m"
+	displayBlock="true        "
+>
+    <Label text="Without Icon Feed Input" class="sapUiSmallMarginTop sapUiTinyMarginBottom" />
+	<FeedInput post="onPost" showIcon="false" />
+</mvc:View>
+```
+
+```javascript
+sap.ui.define(['sap/m/MessageToast','sap/ui/core/mvc/Controller'],
+	function(MessageToast, Controller) {
+	"use strict";
+	var CController = Controller.extend("sap.ui5.walkthrough.controller.App", {
+		onPost: function (oEvent) {
+			var sValue = oEvent.getParameter("value");
+			MessageToast.show("Posted new feed entry: " + sValue);
+		}
+	});
+	return CController;
+});
+```
+
+> 注意：当在前端点击发送按钮后，会触发```onPost```事件，后端通过获取```oEvent.getParameter("value")```来获取到前端输入的内容
+
+#### 1.1.2 带有Icon Placeholder的输入框
+
+![\[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-2klpH8cM-1688522000229)(file://C:\Users\CN0YXNL\AppData\Roaming\marktext\images\2023-07-05-08-29-35-image.png?msec=1688516975920)\]](https://img-blog.csdnimg.cn/b0eed2d089ec4a7e96e36982fed3bf34.png)
+
+
+> 只需要将```showIcon```的属性设置为true即可
+
+```xml
+<FeedInput post="onPost" showIcon="true" />
+```
+
+#### 1.1.3 带有图像的输入框
+
+![\[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-616XcmZa-1688522000229)(file://C:\Users\CN0YXNL\AppData\Roaming\marktext\images\2023-07-05-08-33-58-image.png?msec=1688517238905)\]](https://img-blog.csdnimg.cn/3cd6e36851d24b32bc8fbfb632144f1f.png)
+
+
+> 只需要设置```icon```属性即可
+
+```xml
+<FeedInput post="onPost" showIcon="true" icon="test-resources/sap/m/images/george_washington.jpg" />
+```
+
+#### 1.1.4 指定输入框的行数
+
+> 只需设置```rows```属性即可，这里的5行并不是说只能输入5行，而是输入框的大小被设定到5行
+
+```xml
+<FeedInput post="onPost" showIcon="true" rows="5"/>
+```
+
+#### 1.1.5 有字数限制的输入框
+
+> 需要设置```maxLength```和```showExceededText```属性。这样在输入框的右下角就会提示是否超过输入限制。这个和上面的一样，即使超过输入的限制也可以继续输入，并且在js代码中也可以获取到输入的所有内容
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/4a055b318dc343bca85260577f413760.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/34ad06fc3f8340958889c7e5d817ad31.png)
+
+
+
+```xml
+<FeedInput post="onPost" showIcon="true" maxLength="20" showExceededText="true" />
+```
+
+#### 1.1.6 根据内容自增大小的输入框
+
+> 只需要设置```growing```属性为true即可，默认最小大小，如果输入内容过多，则变大
+
+![\[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-zQJMWvJ6-1688522000233)(file://C:\Users\CN0YXNL\AppData\Roaming\marktext\images\2023-07-05-08-46-29-image.png?msec=1688517989644)\]](https://img-blog.csdnimg.cn/c8a47bbe2e564ea09e0da1dc13c741e0.png)
+
+
+### 1.2 实现完整的评论发送和显示功能
+
+![\[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-stGjFnoW-1688522000233)(file://C:\Users\CN0YXNL\AppData\Roaming\marktext\images\2023-07-05-09-13-21-image.png?msec=1688519601975)\]](https://img-blog.csdnimg.cn/76250389e5324d4dae4e55294c7a9273.png)
+
+
+xml页面代码
+
+```xml
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	controllerName="sap.ui5.walkthrough.controller.App"
+	xmlns="sap.m"
+	displayBlock="true"
+>
+	<FeedInput post="onPost" showIcon="true" growing="true" />
+	<List
+		showSeparators="Inner"
+		items="{/EntryCollection}" >
+			<FeedListItem
+				sender="{Author}"
+				icon="{AuthorPicUrl}"
+				senderPress="onSenderPress" 
+				iconPress="onIconPress" 
+				iconDensityAware="false"
+				info="{Type}"
+				timestamp="{Date}"
+				text="{Text}"
+				convertLinksToAnchorTags="All"
+			/>
+	</List>
+</mvc:View>
+```
+
+> 前端界面使用```<List>```控件作为保存评论信息的容器，并绑定JSON模型。每一条信息使用```<FeedListItem>```来展示，可以设置发送人的信息，并称等诸多信息。
+
+js代码
+
+```javascript
+sap.ui.define(["sap/m/MessageToast", "sap/ui/core/format/DateFormat", "sap/ui/core/mvc/Controller", "sap/ui/model/json/JSONModel"],
+	function(MessageToast, DateFormat, Controller, JSONModel) {
+	"use strict";
+	var CController = Controller.extend("sap.ui5.walkthrough.controller.App", {
+		onInit: function() {
+			// set mock model
+			var oModel = new JSONModel({
+				"EntryCollection" : [{
+					"Author" : "Alexandrina Victoria",
+					"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
+					"Type" : "Request",
+					"Date" : "March 03 2013",
+					"Text" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiamnonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+				}, {
+					"Author" : "George Washington",
+					"AuthorPicUrl" : "test-resources/sap/m/images/george_washington.jpg",
+					"Type" : "Reply",
+					"Date" : "March 04 2013",
+					"Text" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+				}, {
+					"Author" : "Alexandrina Victoria",
+					"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
+					"Type" : "Request",
+					"Date" : "March 05 2013",
+					"Text" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"
+				}, {
+					"Author" : "George Washington",
+					"AuthorPicUrl" : "test-resources/sap/m/images/george_washington.jpg",
+					"Type" : "Rejection",
+					"Date" : "March 07 2013",
+					"Text" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+				}]
+			});
+			this.getView().setModel(oModel);
+		},
+
+		onPost: function(oEvent) {
+			var oFormat = DateFormat.getDateTimeInstance({ style: "medium" });
+			var oDate = new Date();
+			var sDate = oFormat.format(oDate);
+			// create new entry
+			var sValue = oEvent.getParameter("value");
+			var oEntry = {
+				Author: "Alexandrina Victoria",
+				AuthorPicUrl: "https://tse1-mm.cn.bing.net/th/id/OIP-C.SzTNhdOKQsQ9LGhpAy5_XwHaHI?pid=ImgDet&rs=1",
+				Type: "Reply",
+				Date: "" + sDate,
+				Text: sValue
+			};
+
+			// update model 
+            // 这一段更新JSON数据的操作值得学习
+			var oModel = this.getView().getModel();
+			var aEntries = oModel.getData().EntryCollection;
+			aEntries.unshift(oEntry);
+			oModel.setData({
+				EntryCollection: aEntries
+			});
+		},
+
+		onSenderPress: function(oEvent) {
+			MessageToast.show("Clicked on Link: " + oEvent.getSource().getSender());
+		},
+
+		onIconPress: function(oEvent) {
+			MessageToast.show("Clicked on Image: " + oEvent.getSource().getSender());
+		}
+	});
+	return CController;
+});
+```
+
+> 因此，`aEntries.unshift(oEntry);`表示将 `oEntry` 添加到 `aEntries` 数组的开头。这将导致原有的元素向后移动，并在数组的索引位置0处插入 `oEntry` 元素。
+
+### 1.2 FeedListItem控件
+
+通常情况下，Item控件需要结合List控件一起使用。一个List包含多个Item控件。通过JSON对象数据绑定的方式显示数据。Item中可以包含很多的属性，如下面的JSON对象所示：
+
+```json
+{
+			"Author": "Alexandrina Victoria",
+			"AuthorPicUrl": "test-resources/sap/m/images/dronning_victoria.jpg",
+			"Type": "Request",
+			"Date": "March 03 2013",
+			"Actions": [
+				{
+					"Text": "Delete",
+					"Icon": "sap-icon://delete",
+					"Key": "delete"
+				},
+				{
+					"Text": "Share",
+					"Icon": "sap-icon://share-2",
+					"Key": "share"
+				},
+				{
+					"Text": "Edit",
+					"Icon": "sap-icon://edit",
+					"Key": "edit"
+				}
+			],
+			"Text": "Lorem <strong>ipsum dolor sit amet</strong>, <em>consetetur sadipscing elitr</em>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, <a href='http://www.sap.com'>sed diam voluptua</a>. At vero eos et accusam et justo duo dolores et ea rebum.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod <strong>tempor invidunt ut labore et dolore magna</strong> aliquyam erat, sed diam voluptua. <em>At vero eos et accusam et justo</em> duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiamnonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <u>sed diam nonumy eirmod tempor invidunt ut labore</u> et dolore magna aliquyam erat, sed diam voluptua. <strong>At vero eos et accusam</strong> et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod <a href='//www.sap.com'>tempor invidunt</a> ut labore et dolore magna aliquyam erat, sed diam voluptua. <em>At vero eos et accusam</em> et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+		}
+```
+
+其中Actions是这一条item可以包含按钮，用于进行不同的操作，如下图所示：
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/fb3cc82aec5d4e1ab366f5326e0dc5f8.png)
+
+
+在js中通过判断不同actions的key即可区分不同的按钮按下，并为不同的按钮按下编写自定义的代码。
+
+```javascript
+onActionPressed: function(oEvent) {
+			var sAction = oEvent.getSource().getKey();
+		
+			if (sAction === "delete") {
+				this.removeItem(oEvent.getParameter("item"));
+				MessageToast.show("Item deleted");
+			} else {
+				MessageToast.show("Action \"" + sAction + "\" pressed.");
+			}
+		},
+		
+		removeItem: function(oFeedListItem) {
+			// 如果删除第一个元素，那么sFeedListItemBindingPath的值为"/EntryCollection/0" 要删除的元素的下标是0，因此需要将数组进行以/进行拆分，获取最后一个数组元素，也就是0
+			var sFeedListItemBindingPath = oFeedListItem.getBindingContext().getPath();
+			// 而 pop() 方法是 JavaScript 数组的一个方法，用于删除并返回数组的最后一个元素 
+			var sFeedListItemIndex = sFeedListItemBindingPath.split("/").pop();
+			var aFeedCollection = this.getView().getModel().getProperty("/EntryCollection");
+		
+			aFeedCollection.splice(sFeedListItemIndex, 1); // 从下标sFeedListItemIndex开始删除，删除1个元素
+			this.getView().getModel().setProperty("/EntryCollection", aFeedCollection);
+		}
+```
+> 需要注意的是：如果要使用Actions功能，需要在Item里面添加相关的一些代码
+
+```xml
+<List
+	showSeparators="Inner"
+	items="{/EntryCollection}" >
+		<FeedListItem
+			sender="{Author}"
+			icon="{AuthorPicUrl}"
+			senderPress="onSenderPress" 
+			iconPress="onIconPress" 
+			iconDensityAware="false"
+			info="{Type}"
+			timestamp="{Date}"
+			text="{Text}"
+			convertLinksToAnchorTags="All"
+			actions="{path: 'Actions', templateShareable: false}">
+		    <FeedListItemAction text="{Text}" icon="{Icon}" key="{Key}" press="onActionPressed" />
+		</FeedListItem>
+</List>
+```
+
+### 1.3 Label控件
+
+可以通过设置相关的的属性对Label的格式进行一些设计
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/449ede74a7b5476f89e70a20ecdf1b63.png)
+
+
+```xml
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	controllerName="sap.ui5.walkthrough.controller.App"
+	xmlns="sap.m"
+	displayBlock="true"
+>
+	<Label text="Label A (required)" labelFor="input-a" />
+	<Input id="input-a" required="true" />
+
+	<Label
+		text="Label B (bold)"
+		labelFor="input-b"
+		design="Bold" />
+	<Input id="input-b" />
+
+	<Label text="Label C (normal)" labelFor="input-c" />
+	<Input id="input-c" />
+</mvc:View>
+```
+
+使用```form:SimpleForm```控件可以更加友好的显示Label和Input控件，如下图所示
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/591971f798d340b0b6a73c7bfb563b8b.png)
+
+
+```xml
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	controllerName="sap.ui5.walkthrough.controller.App"
+	xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form"
+>
+	<form:SimpleForm
+		layout="ResponsiveGridLayout"
+		editable="true"
+		adjustLabelSpan="false"
+		labelSpanXL="2"
+		labelSpanL="2"
+		labelSpanM="2"
+		labelSpanS="5">
+		<Label text="Display Only" />
+		<Label text="Label A (required)" labelFor="input-a" />
+		<Input id="input-a" required="true" />
+
+		<Label
+			text="Label B (bold)"
+			labelFor="input-b"
+			design="Bold" />
+		<Input id="input-b" />
+
+		<Label text="Label C (normal)" labelFor="input-c" />
+		<Input id="input-c" />
+	</form:SimpleForm>
+</mvc:View>
+```
+
+
+### 1.4 Input List Item 控件
+通过这个控件可以更加标准化的显示多种Input控件
+
+```xml
+<mvc:View
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	controllerName="sap.ui5.walkthrough.controller.App"
+	displayBlock="true"
+>
+<List
+		headerText="Input" >
+		<InputListItem label="WLAN">
+			<Switch state="true" />
+		</InputListItem>
+		<InputListItem label="Flight Mode">
+			<CheckBox selected="true" />
+		</InputListItem>
+		<InputListItem label="High Performance">
+			<RadioButton
+				groupName="GroupInputListItem"
+				selected="true" />
+		</InputListItem>
+		<InputListItem label="Battery Saving">
+			<RadioButton
+				groupName="GroupInputListItem" />
+		</InputListItem>
+		<InputListItem label="Price (EUR)">
+			<Input
+				placeholder="Price"
+				value="799"
+				type="Number" />
+		</InputListItem>
+		<InputListItem label="Address">
+			<Input
+				placeholder="Address"
+				value="Main Rd, Manchester" />
+		</InputListItem>
+		<InputListItem label="Country">
+			<Select>
+				<core:Item key="GR" text="Greece" />
+				<core:Item key="MX" text="Mexico" />
+				<core:Item key="NO" text="Norway" />
+				<core:Item key="NZ" text="New Zealand" />
+				<core:Item key="NL" text="Netherlands" />
+			</Select>
+		</InputListItem>
+		<InputListItem label="Volume">
+			<Slider min="0" max="10" value="7" width="200px" />
+		</InputListItem>
+	</List>
+</mvc:View>
+```
+![在这里插入图片描述](https://img-blog.csdnimg.cn/218159cac4c94a6193081f15cd91a94a.png)
+> 需要注意的是RadioButton实现互斥的方式是设置名称相同的`GroupName`
+
+
+### 1.5 二维码扫描控件
+可以通过Barcode Scanner Button控件实现对二维码的扫描
+![在这里插入图片描述](https://img-blog.csdnimg.cn/538701bdc61f4a4fa2bc51ac1d9d6d1a.png)
+前端代码如下：
+
+```xml
+<mvc:View
+		controllerName="sap.ui5.walkthrough.controller.App"
+		height="100%"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:ndc="sap.ndc"
+		xmlns="sap.m">
+	<VBox class="sapUiSmallMargin">
+		<ndc:BarcodeScannerButton
+			id="sampleBarcodeScannerButton"
+			scanSuccess="onScanSuccess"
+			scanFail="onScanError"
+			inputLiveUpdate="onScanLiveupdate"
+			dialogTitle="Barcode Scanner Button Sample" 
+		/>
+		<HBox class="sapUiTinyMarginTop">
+			<Label text="Scan Result:"/>
+			<Text id="sampleBarcodeScannerResult" text="" class="sapUiTinyMarginBegin"/>
+		</HBox>
+	</VBox>
+</mvc:View>
+```
+
+> 关于HBox和VBox 在SAPUI5（UI5）中，`VBox` 和 `HBox` 是布局容器控件，用于在垂直方向和水平方向上排列其他控件。
+> 
+> `VBox`
+> 表示垂直盒子布局容器，它按照从上到下的顺序垂直排列子控件。子控件按照添加的顺序依次排列，每个子控件占据一行。可以通过设置属性来控制子控件的布局行为，例如
+> `flexGrow` 属性用于定义子控件在垂直方向上的伸展性。
+> 
+> 以下是 `VBox` 的一个示例：
+> 
+> ```xml 
+> <VBox>
+>     <Button text="Button 1" />
+>     <Button text="Button 2" />
+>     <Button text="Button 3" />
+></VBox> 
+
+> `HBox`
+> 表示水平盒子布局容器，它按照从左到右的顺序水平排列子控件。子控件按照添加的顺序依次排列，每个子控件占据一列。同样，可以通过设置属性来控制子控件的布局行为，例如
+> `flexGrow` 属性用于定义子控件在水平方向上的伸展性。
+> 
+> 以下是 `HBox` 的一个示例：
+> 
+> ```xml 
+> <HBox>
+>     <Button text="Button 1" />
+>     <Button text="Button 2" />
+>     <Button text="Button 3" /> 
+>  </HBox> 
+
+> 通过使用 `VBox` 和 `HBox` 可以方便地创建垂直和水平布局的界面，并控制子控件的排列方式和伸缩性。
+
+
+
+### 1.6 日期控件Calendar
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/bd5a5e4d78b840e79741aa62ae562034.png)
+
+#### 1.6.1 选择一个日期的日期控件
+该控件可以选择一个日期，代码如下
+
+```xml
+<mvc:View
+		controllerName="sap.ui5.walkthrough.controller.App"
+		height="100%"
+		xmlns:l="sap.ui.layout"
+		xmlns:u="sap.ui.unified"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns="sap.m"
+		class="viewPadding"
+>
+	<l:VerticalLayout>
+		<u:Calendar
+				id="calendar"
+				select="handleCalendarSelect" />
+		<Button
+				press="handleSelectToday"
+				text="Select Today" />
+		<l:HorizontalLayout>
+			<Label
+					text="Selected Date (yyyy-mm-dd):"
+					class="labelMarginLeft" />
+			<Text
+					id="selectedDate"
+					text="No Date Selected"
+					class="labelMarginLeft"/>
+		</l:HorizontalLayout>
+	</l:VerticalLayout>
+</mvc:View>
+```
+> 注意在使用中要引入```sap.ui.unified```库才可以
+
+当在日历上选择了日期以后，会触发```handleCalendarSelect```事件，我们可以在js代码中获取到所选日期，如下面的代码所示：
+
+```javascript
+// 创建日期格式化器
+onInit: function() {
+	this.oFormatYyyymmdd = DateFormat.getInstance({pattern: "yyyy-MM-dd", calendarType: CalendarType.Gregorian});
+},
+handleCalendarSelect: function(oEvent) {
+		var oCalendar = oEvent.getSource();
+
+		this._updateText(oCalendar);
+	},
+
+_updateText: function(oCalendar) {
+	var oText = this.byId("selectedDate"),
+		aSelectedDates = oCalendar.getSelectedDates(),
+		oDate = aSelectedDates[0].getStartDate();
+		// 调用日期格式化器就日期进行格式化
+	    oText.setText(this.oFormatYyyymmdd.format(oDate));
+},
+```
+
+> 需要注意的是：在获取所选时间的时候，获取到的是一个数组，我们应该取数组中的第一个元素，```aSelectedDates[0]```，然后通过```getStartDate()```获取到开始时间。
+
+#### 1.6.2 选择日期区间的日期组件
+和上面的代码基本一样，首先需要开启选择日期区间的功能，通过设置```intervalSelection```为true来设置。
+
+```xml
+<mvc:View
+		controllerName="sap.ui5.walkthrough.controller.App"
+		height="100%"
+		xmlns:l="sap.ui.layout"
+		xmlns:u="sap.ui.unified"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns="sap.m"
+		class="viewPadding"
+>
+	<l:VerticalLayout>
+		<u:Calendar
+				id="calendar"
+				select="handleCalendarSelect"
+				intervalSelection="true"/>
+		<l:HorizontalLayout>
+			<Label
+					text="Selected From (yyyy-mm-dd):"
+					class="labelMarginLeft" />
+			<Text
+					id="selectedDateFrom"
+					text="No Date Selected"
+					class="labelMarginLeft"/>
+		</l:HorizontalLayout>
+		<l:HorizontalLayout>
+			<Label
+					text="Selected To (yyyy-mm-dd):"
+					class="labelMarginLeft" />
+			<Text
+					id="selectedDateTo"
+					text="No Date Selected"
+					class="labelMarginLeft"/>
+		</l:HorizontalLayout>
+	</l:VerticalLayout>
+</mvc:View>
+```
+在js代码中获取到选择日期的开始时间和终止时间即可
+
+```javascript
+sap.ui.define([
+	'sap/ui/core/mvc/Controller',
+	'sap/ui/unified/DateRange',
+	'sap/ui/core/format/DateFormat',
+	'sap/ui/core/library',
+	'sap/ui/core/date/UI5Date',
+	'sap/m/MessageToast'
+], function(Controller, DateRange, DateFormat, coreLibrary, UI5Date, MessageToast) {
+"use strict";
+
+var CalendarType = coreLibrary.CalendarType;
+
+return Controller.extend("sap.ui5.walkthrough.controller.App", {oFormatYyyymmdd: null,
+
+	onInit: function() {
+		this.oFormatYyyymmdd = DateFormat.getInstance({pattern: "yyyy-MM-dd", calendarType: CalendarType.Gregorian});
+	},
+
+	handleCalendarSelect: function(oEvent) {
+		var oCalendar = oEvent.getSource();
+		this._updateText(oCalendar.getSelectedDates()[0]);
+	},
+
+	_updateText: function(oSelectedDates) {
+		var oSelectedDateFrom = this.byId("selectedDateFrom"),
+			oSelectedDateTo = this.byId("selectedDateTo"),
+			oDate;
+
+		if (oSelectedDates) {
+			// 获取开始时间
+			oDate = oSelectedDates.getStartDate();
+			if (oDate) {
+				oSelectedDateFrom.setText(this.oFormatYyyymmdd.format(oDate));
+			} else {
+				oSelectedDateTo.setText("No Date Selected");
+			}
+			// 获取终止时间
+			oDate = oSelectedDates.getEndDate();
+			if (oDate) {
+				oSelectedDateTo.setText(this.oFormatYyyymmdd.format(oDate));
+			} else {
+				oSelectedDateTo.setText("No Date Selected");
+			}
+		} else {
+			oSelectedDateFrom.setText("No Date Selected");
+			oSelectedDateTo.setText("No Date Selected");
+		}
+	},
+});
+});
+```
+#### 1.6.3 选择任意的时间以及时间范围
+允许用户选择多个时间。设置日期控件的属性为`intervalSelection="false"`  `singleSelection="false"`，即可允许选择任意多个日期以及日期范围。
+
+对应的js代码如下所示：
+
+```javascript
+sap.ui.define([
+	'sap/ui/core/mvc/Controller',
+	'sap/ui/unified/DateRange',
+	'sap/ui/core/format/DateFormat',
+	'sap/ui/core/library',
+	'sap/ui/core/date/UI5Date',
+	'sap/m/MessageToast',
+	'sap/ui/model/json/JSONModel'
+], function (Controller, DateRange, DateFormat, coreLibrary, UI5Date, MessageToast, JSONModel) {
+	"use strict";
+
+	var CalendarType = coreLibrary.CalendarType;
+
+	return Controller.extend("sap.ui5.walkthrough.controller.App", {
+
+		oFormatYyyymmdd: null,
+		oModel: null,
+
+		onInit: function () {
+			this.oFormatYyyymmdd = DateFormat.getInstance({ pattern: "yyyy-MM-dd", calendarType: CalendarType.Gregorian });
+
+			this.oModel = new JSONModel({ selectedDates: [] });
+			this.getView().setModel(this.oModel);
+		},
+
+		handleCalendarSelect: function (oEvent) {
+			var oCalendar = oEvent.getSource(),
+				aSelectedDates = oCalendar.getSelectedDates(),
+				oData = {
+					selectedDates: []
+				},
+				oDate,
+				i;
+			if (aSelectedDates.length > 0) {
+				for (i = 0; i < aSelectedDates.length; i++) {
+					oDate = aSelectedDates[i].getStartDate();
+					oData.selectedDates.push({ Date: this.oFormatYyyymmdd.format(oDate) });
+				}
+				this.oModel.setData(oData);
+			} else {
+				this._clearModel();
+			}
+		},
+
+		handleRemoveSelection: function () {
+			this.byId("calendar").removeAllSelectedDates();
+			this._clearModel();
+		},
+
+		_clearModel: function () {
+			var oData = { selectedDates: [] };
+			this.oModel.setData(oData);
+		}
+	});
+
+});
+
+```
+
+> 需要注意的是：`oCalendar.getSelectedDates()`
+> 返回一个数组，其中包含选定日期的信息。每个选定日期都表示为一个对象，其中包含有关日期的相关信息，例如日期的开始和结束时间、附加的自定义数据等。
+> 
+> 通常，每个选定日期对象具有以下属性：
+> 
+> - `startDate`：选定日期的开始时间，通常是一个 `Date` 对象。
+> - `endDate`：选定日期的结束时间，如果日期范围为单个日期，则该值为 `null`。
+> - `data`：可选的自定义数据，可以存储与选定日期相关的任何额外信息。
+> 
+> 通过访问数组中的每个选定日期对象的属性，您可以获取和处理选定日期的具体信息。
+
+
+> 如果需要关闭显示第几周，可以设置```showWeekNumbers="false"```
