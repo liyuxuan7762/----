@@ -1,0 +1,309 @@
+{
+    "shopOrder": [
+        {
+            "installedQty": "53",
+            "batchProductionStatus": "InQueue",
+            "orderPriority": "AA",
+            "numberOfTasks": "56",
+            "shopOrderName": "1363421793",
+            "waitingTime": 0,
+            "productionDate": "2024-01-29",
+            "sfcTaskState": "0",
+            "exceptionMessage": "",
+            "batchNumber": "04803438",
+            "binLocation": [],
+            "containerType": "ADVU-16/20/25-CAP,DEFAULTRACK;ADVU-16/20/25-CAP_2,DEFAULTRACK;",
+            "operationName": "50235354-1-0-0025",
+            "bindingTimestamp": "",
+            "operationDesc": "自动喷漆防护、上挂",
+            "workCenter": "C3300716",
+            "planDate": "2024-01-29",
+            "materialDescription": "轴承盖             DSBX-63-PPV:CO",
+            "sequence": "1",
+            "materialName": "1556704",
+            "site": "0480",
+            "shopOrderQty": "56",
+            "installedRackNumber": [],
+            "deliveryStatus": "完成",
+            "RackStatus": "Z00"
+        },
+        {
+            "installedQty": "90",
+            "batchProductionStatus": "InQueue",
+            "orderPriority": "",
+            "numberOfTasks": "200",
+            "shopOrderName": "1363421746",
+            "waitingTime": 41,
+            "productionDate": "2024-01-29",
+            "sfcTaskState": "0",
+            "exceptionMessage": "",
+            "batchNumber": "0480-4169876462-1",
+            "binLocation": [
+                {
+                    "bin": "ST07-Z85",
+                    "status": "UNBIND"
+                }
+            ],
+            "containerType": "ADVU-16/20/25-CAP,DEFAULTRACK;ADVU-16/20/25-CAP_2,DEFAULTRACK;",
+            "operationName": "50235354-1-0-0025",
+            "bindingTimestamp": "2023-12-19 01:59:57",
+            "operationDesc": "自动喷漆防护、上挂",
+            "workCenter": "C3300716",
+            "planDate": "2024-01-29",
+            "materialDescription": "轴承盖             DSBX-63-PPV:CO",
+            "sequence": "2",
+            "materialName": "1556704",
+            "site": "0480",
+            "shopOrderQty": "200",
+            "installedRackNumber": [],
+            "deliveryStatus": "完成",
+            "RackStatus": "Z00"
+        },
+        {
+            "installedQty": "50",
+            "batchProductionStatus": "InQueue",
+            "orderPriority": "",
+            "numberOfTasks": "98",
+            "shopOrderName": "1363421770",
+            "waitingTime": 32,
+            "productionDate": "2024-01-29",
+            "sfcTaskState": "0",
+            "exceptionMessage": "Testing",
+            "batchNumber": "0480-4169876690-1",
+            "binLocation": [
+                {
+                    "bin": "ST07-Z37",
+                    "status": "BIND"
+                }
+            ],
+            "containerType": "ADVU-16/20/25-CAP,DEFAULTRACK;ADVU-16/20/25-CAP_2,DEFAULTRACK;",
+            "operationName": "50235354-1-0-0025",
+            "bindingTimestamp": "2023-12-27 07:14:07",
+            "operationDesc": "自动喷漆防护、上挂",
+            "workCenter": "C3300716",
+            "planDate": "2024-01-29",
+            "materialDescription": "轴承盖             DSBX-63-PPV:CO",
+            "sequence": "3",
+            "materialName": "1556704",
+            "site": "0480",
+            "shopOrderQty": "100",
+            "installedRackNumber": [],
+            "deliveryStatus": "完成",
+            "RackStatus": "Z00"
+        },
+        {
+            "installedQty": "50",
+            "batchProductionStatus": "InQueue",
+            "orderPriority": "",
+            "numberOfTasks": "56",
+            "shopOrderName": "1363421778",
+            "waitingTime": 30,
+            "productionDate": "2024-01-29",
+            "sfcTaskState": "0",
+            "exceptionMessage": "",
+            "batchNumber": "0480-4169876762-1",
+            "binLocation": [
+                {
+                    "bin": "ST07-Z32",
+                    "status": "BIND"
+                }
+            ],
+            "containerType": "ADVU-16/20/25-CAP,DEFAULTRACK;ADVU-16/20/25-CAP_2,DEFAULTRACK;",
+            "operationName": "50235354-1-0-0025",
+            "bindingTimestamp": "2023-12-29 09:09:40",
+            "operationDesc": "自动喷漆防护、上挂",
+            "workCenter": "C3300716",
+            "planDate": "2024-01-29",
+            "materialDescription": "轴承盖             DSBX-63-PPV:CO",
+            "sequence": "4",
+            "materialName": "1556704",
+            "site": "0480",
+            "shopOrderQty": "56",
+            "installedRackNumber": [],
+            "deliveryStatus": "完成",
+            "RackStatus": "Z00"
+        },
+        {
+            "installedQty": "40",
+            "batchProductionStatus": "Active",
+            "orderPriority": "",
+            "numberOfTasks": "100",
+            "shopOrderName": "1363421799",
+            "waitingTime": 11,
+            "productionDate": "2024-01-29",
+            "sfcTaskState": "0",
+            "exceptionMessage": "",
+            "batchNumber": "04803443",
+            "binLocation": [
+                {
+                    "bin": "ST07-Z86",
+                    "status": "UNBIND"
+                }
+            ],
+            "containerType": "ADVU-16/20/25-CAP,DEFAULTRACK;ADVU-16/20/25-CAP_2,DEFAULTRACK;",
+            "operationName": "50235354-1-0-0025",
+            "bindingTimestamp": "2024-01-17 06:54:33",
+            "operationDesc": "自动喷漆防护、上挂",
+            "workCenter": "C3300716",
+            "planDate": "2024-01-29",
+            "materialDescription": "轴承盖             DSBX-63-PPV:CO",
+            "sequence": "5",
+            "materialName": "1556704",
+            "site": "0480",
+            "shopOrderQty": "100",
+            "installedRackNumber": [
+                {
+                    "rack": "YH0005",
+                    "status": "INSTALLED"
+                }
+            ],
+            "deliveryStatus": "完成",
+            "RackStatus": "Z00"
+        },
+        {
+            "installedQty": "0",
+            "batchProductionStatus": "New",
+            "orderPriority": "",
+            "numberOfTasks": "54",
+            "shopOrderName": "1363421820",
+            "waitingTime": 3,
+            "productionDate": "2024-01-29",
+            "sfcTaskState": "0",
+            "exceptionMessage": "",
+            "batchNumber": "04803446",
+            "binLocation": [
+                {
+                    "bin": "ST07-Z30",
+                    "status": "BIND"
+                }
+            ],
+            "containerType": "ADVU-16/20/25-CAP_2,DEFAULTRACK;DFM-40 HOUSING STROKE BL 100,DEFAULTRACK;DFM-32 HOUSING ANODIZING,BACKUPRACK;DFM-40 HOUSING ANODIZING,BACKUPRACK;",
+            "operationName": "50297733-1-0-0039",
+            "bindingTimestamp": "2024-01-25 07:57:29",
+            "operationDesc": "阳极氧化上挂",
+            "workCenter": "C3300716",
+            "planDate": "2024-01-29",
+            "materialDescription": "壳体              DFM-40-25",
+            "sequence": "6",
+            "materialName": "2632202",
+            "site": "0480",
+            "shopOrderQty": "54",
+            "installedRackNumber": "",
+            "deliveryStatus": "完成",
+            "RackStatus": "Z01"
+        },
+        {
+            "installedQty": "0",
+            "batchProductionStatus": "New",
+            "orderPriority": "",
+            "numberOfTasks": "54",
+            "shopOrderName": "1363421823",
+            "waitingTime": 2,
+            "productionDate": "2024-01-29",
+            "sfcTaskState": "0",
+            "exceptionMessage": "",
+            "batchNumber": "04803449",
+            "binLocation": [
+                {
+                    "bin": "ST07-Z36",
+                    "status": "BIND"
+                }
+            ],
+            "containerType": "ADVU-16/20/25-CAP_2,DEFAULTRACK;DFM-40 HOUSING STROKE BL 100,DEFAULTRACK;DFM-32 HOUSING ANODIZING,BACKUPRACK;DFM-40 HOUSING ANODIZING,BACKUPRACK;",
+            "operationName": "50297733-1-0-0039",
+            "bindingTimestamp": "2024-01-26 09:14:31",
+            "operationDesc": "阳极氧化上挂",
+            "workCenter": "C3300716",
+            "planDate": "2024-01-29",
+            "materialDescription": "壳体              DFM-40-25",
+            "sequence": "7",
+            "materialName": "2632202",
+            "site": "0480",
+            "shopOrderQty": "54",
+            "installedRackNumber": "",
+            "deliveryStatus": "完成",
+            "RackStatus": "Z01"
+        },
+        {
+            "installedQty": "0",
+            "batchProductionStatus": "InQueue",
+            "orderPriority": "",
+            "numberOfTasks": "56",
+            "shopOrderName": "1363421774",
+            "waitingTime": 24,
+            "productionDate": "2024-01-29",
+            "sfcTaskState": "0",
+            "exceptionMessage": "",
+            "batchNumber": "0480-4169876726-1",
+            "binLocation": [
+                {
+                    "bin": "ST01-X04",
+                    "status": "UNBIND"
+                }
+            ],
+            "containerType": "ADVU-16/20/25-CAP,DEFAULTRACK;ADVU-16/20/25-CAP_2,DEFAULTRACK;",
+            "operationName": "50235354-1-0-0025",
+            "bindingTimestamp": "2024-01-05 04:18:01",
+            "operationDesc": "自动喷漆防护、上挂",
+            "workCenter": "C3300716",
+            "planDate": "2024-01-29",
+            "materialDescription": "轴承盖             DSBX-63-PPV:CO",
+            "sequence": "8",
+            "materialName": "1556704",
+            "site": "0480",
+            "shopOrderQty": "56",
+            "installedRackNumber": [
+                {
+                    "rack": "YH0003",
+                    "status": "HOLD"
+                }
+            ],
+            "deliveryStatus": "完成",
+            "RackStatus": "Z03"
+        },
+        {
+            "installedQty": "182",
+            "batchProductionStatus": "InQueue",
+            "orderPriority": "",
+            "numberOfTasks": "26",
+            "shopOrderName": "1363421768",
+            "waitingTime": 32,
+            "productionDate": "2024-01-29",
+            "sfcTaskState": "0",
+            "exceptionMessage": "",
+            "batchNumber": "0480-4169876672-1",
+            "binLocation": [
+                {
+                    "bin": "ST07-Z86",
+                    "status": "UNBIND"
+                },
+                {
+                    "bin": "ST01-X02",
+                    "status": "UNBIND"
+                }
+            ],
+            "containerType": "ADVU-16/20/25-CAP,DEFAULTRACK;ADVU-16/20/25-CAP_2,DEFAULTRACK;",
+            "operationName": "50235354-1-0-0025",
+            "bindingTimestamp": "2023-12-27 06:26:20",
+            "operationDesc": "自动喷漆防护、上挂",
+            "workCenter": "C3300716",
+            "planDate": "2024-01-29",
+            "materialDescription": "轴承盖             DSBX-63-PPV:CO",
+            "sequence": "9",
+            "materialName": "1556704",
+            "site": "0480",
+            "shopOrderQty": "26",
+            "installedRackNumber": [
+                {
+                    "rack": "YH0003",
+                    "status": "INSTALLED"
+                }
+            ],
+            "deliveryStatus": "完成",
+            "RackStatus": "Z04"
+        }
+    ],
+    "remainingDurationBeforeReturnedOrders": 0,
+    "hasMoreShopOrders": false,
+    "totalAmmount": 9
+}

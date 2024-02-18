@@ -1,0 +1,5572 @@
+{
+    "totalAmmount": "73",
+    "hasMoreShopOrders": false,
+    "remainingDurationBeforeReturnedOrders": 0,
+    "shopOrder": [
+        {
+            "site": "0480",
+            "shopOrderName": "1363421685",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803355",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6869370",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": null,
+            "ncStatus": null,
+            "toolStatus": null,
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-11-09 15:51:03",
+            "planEnd": "2023-11-09 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421660",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_IN_WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169874948-3",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169874948-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169874948-4",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169874948-2",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "87",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6868109",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 87,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "29",
+            "planStart": "2023-10-24 15:51:03",
+            "planEnd": "2023-10-24 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421681",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169875381-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6867515",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 100,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-11-08 15:51:03",
+            "planEnd": "2023-11-08 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421655",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169874903-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169874903-2",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169874903-3",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6866621",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-10-17 15:51:03",
+            "planEnd": "2023-10-17 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421658",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169874930-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169874930-2",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6866583",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 44,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-10-24 15:51:03",
+            "planEnd": "2023-10-24 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421659",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169874939-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169874939-2",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169874939-3",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6866721",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 10,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-10-26 15:51:03",
+            "planEnd": "2023-10-26 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421662",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTO_RELEASED",
+            "priorityText": "",
+            "priority": "500",
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803189",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803190",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803191",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803192",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803193",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803194",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803195",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803196",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803197",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803198",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803199",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803200",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803201",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803202",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803203",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803204",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803205",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803206",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803207",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803208",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803209",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803210",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803211",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803212",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803213",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803214",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803215",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803216",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803217",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803218",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803219",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803220",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803221",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803222",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803223",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803224",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803225",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803226",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803227",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803228",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803229",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803230",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803231",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803232",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803233",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803234",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803235",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803236",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803237",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803238",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803239",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803240",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803241",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803242",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803243",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803244",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803245",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803246",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803247",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803248",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803249",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803250",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803251",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803252",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803253",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803254",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803255",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803256",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803257",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803258",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803259",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803260",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803261",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803262",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803263",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803264",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803265",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803266",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803267",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803268",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803269",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803270",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803271",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803272",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803273",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803274",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803275",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803276",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803277",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803278",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803279",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803280",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803281",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803282",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803283",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803284",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803285",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803286",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803287",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803288",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803289",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803290",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803291",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803292",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803293",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803294",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803295",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803296",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803297",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803298",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803299",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803300",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803301",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803302",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803303",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803304",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803305",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803306",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803307",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803308",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803309",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803310",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803311",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803312",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803313",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803314",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803315",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803316",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803317",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803318",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803319",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803320",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803321",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803322",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803323",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803324",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803325",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803326",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803327",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803328",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803329",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803330",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803331",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803332",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803333",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803334",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803335",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803336",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803337",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803338",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803339",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803340",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803341",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803342",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803343",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803344",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803345",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803346",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803347",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803348",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": [
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803189",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803190",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803191",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803192",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803193",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803194",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803195",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803196",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803197",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803198",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803199",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803200",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803201",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803202",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803203",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803204",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803205",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803206",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803207",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803208",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803209",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803210",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803211",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803212",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803213",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803214",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803215",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803216",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803217",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803218",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803219",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803220",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803221",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803222",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803223",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803224",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803225",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803226",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803227",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803228",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803229",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803230",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803231",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803232",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803233",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803234",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803235",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803236",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803237",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803238",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803239",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803240",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803241",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803242",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803243",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803244",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803245",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803246",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803247",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803248",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803249",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803250",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803251",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803252",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803253",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803254",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803255",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803256",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803257",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803258",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803259",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803260",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803261",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803262",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803263",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803264",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803265",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803266",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803267",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803268",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803269",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803270",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803271",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803272",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803273",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803274",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803275",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803276",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803277",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803278",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803279",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803280",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803281",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803282",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803283",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803284",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803285",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803286",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803287",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803288",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803289",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803290",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803291",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803292",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803293",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803294",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803295",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803296",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803297",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803298",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803299",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803300",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803301",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803302",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803303",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803304",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803305",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803306",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803307",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803308",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803309",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803310",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803311",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803312",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803313",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803314",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803315",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803316",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803317",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803318",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803319",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803320",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803321",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803322",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803323",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803324",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803325",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803326",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803327",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803328",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803329",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803330",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803331",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803332",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803333",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803334",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803335",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803336",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803337",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803338",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803339",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803340",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803341",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803342",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803343",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803344",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803345",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803346",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803347",
+                        "stepId": "0009",
+                        "bin": ""
+                    },
+                    {
+                        "shopOrderRef": "ShopOrderBO:0480,1363421662",
+                        "sfc": "04803348",
+                        "stepId": "0009",
+                        "bin": ""
+                    }
+                ]
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "160",
+            "uom": "ST",
+            "extensionFields": null,
+            "createdDateTime": "2023-11-10T05:22:28.000Z",
+            "completionDateTime": "2023-11-02T23:00:00.000Z",
+            "materialAvailability": "NOT_RELEVANT",
+            "sequence": "500",
+            "materialAvailabilityColor": "1"
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421663",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_IN_WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803349",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "150",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6869602",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 150,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "49",
+            "planStart": "2023-11-02 15:11:00",
+            "planEnd": "2023-11-02 16:24:48",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421645",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169874641-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6866183",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 100,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-10-12 15:51:03",
+            "planEnd": "2023-10-12 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421647",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169874659-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "120",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6866287",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 120,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "39",
+            "planStart": "2023-10-12 15:37:41",
+            "planEnd": "2023-10-12 16:33:03",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421729",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_IN_WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876305-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871322",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 100,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-12-06 14:44:20",
+            "planEnd": "2023-12-06 16:16:35",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421725",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876233-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876233-2",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "200",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6870919",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 200,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "66",
+            "planStart": "2023-12-05 14:44:20",
+            "planEnd": "2023-12-05 16:16:35",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421695",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169875899-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6870277",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 100,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-11-28 15:51:03",
+            "planEnd": "2023-11-28 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421697",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876049-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6870352",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 100,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-11-29 15:51:03",
+            "planEnd": "2023-11-29 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421720",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876172-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "10",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6870703",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "3",
+            "planStart": "2023-12-22 16:51:04",
+            "planEnd": "2023-12-22 16:55:41",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421699",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876072-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6870367",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 100,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-11-29 15:51:03",
+            "planEnd": "2023-11-29 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421723",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876215-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "10",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6870833",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "3",
+            "planStart": "2023-12-04 16:51:04",
+            "planEnd": "2023-12-04 16:55:41",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421689",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803373",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "200",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6870815",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "66",
+            "planStart": "2023-11-27 14:44:20",
+            "planEnd": "2023-11-27 16:16:35",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421702",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876100-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6870503",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 100,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-11-30 15:51:03",
+            "planEnd": "2023-11-30 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421703",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876109-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "200",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6870604",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 200,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "66",
+            "planStart": "2023-11-30 14:44:20",
+            "planEnd": "2023-11-30 16:16:35",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421726",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876272-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876272-2",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "150",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871012",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 150,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "49",
+            "planStart": "2023-12-05 15:17:42",
+            "planEnd": "2023-12-05 16:26:53",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421721",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876197-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "10",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6870853",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "3",
+            "planStart": "2023-12-04 16:51:04",
+            "planEnd": "2023-12-04 16:55:41",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421722",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876206-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "10",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6870859",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "3",
+            "planStart": "2023-12-04 16:51:04",
+            "planEnd": "2023-12-04 16:55:41",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421727",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876281-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876281-2",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "150",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871072",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 150,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "49",
+            "planStart": "2023-12-05 15:17:42",
+            "planEnd": "2023-12-05 16:26:53",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421728",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876296-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "200",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871207",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 200,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "66",
+            "planStart": "2023-12-06 14:44:20",
+            "planEnd": "2023-12-06 16:16:35",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421694",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_IN_WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169875890-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "20",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871302",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 20,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "7",
+            "planStart": "2023-11-28 15:51:03",
+            "planEnd": "2023-11-28 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421724",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_IN_WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876224-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871257",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 100,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-12-05 14:44:20",
+            "planEnd": "2023-12-05 16:16:35",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421731",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876323-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871402",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 100,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-12-07 15:51:03",
+            "planEnd": "2023-12-07 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421730",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_IN_WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876314-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "50",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871362",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 50,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "16",
+            "planStart": "2023-12-06 15:51:03",
+            "planEnd": "2023-12-06 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421732",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876332-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871367",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 100,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-12-07 15:51:03",
+            "planEnd": "2023-12-07 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421733",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876341-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876341-2",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "97",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871442",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-12-07 15:51:03",
+            "planEnd": "2023-12-07 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421734",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876350-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "98",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871505",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-12-07 15:51:03",
+            "planEnd": "2023-12-07 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421736",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876372-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "200",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871812",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 200,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "66",
+            "planStart": "2023-12-08 14:44:20",
+            "planEnd": "2023-12-08 16:16:35",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421737",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876381-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "200",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871822",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 200,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "66",
+            "planStart": "2023-12-08 14:44:20",
+            "planEnd": "2023-12-08 16:16:35",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421738",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876390-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871903",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-12-08 15:51:03",
+            "planEnd": "2023-12-08 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421743",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876435-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "10",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871959",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "3",
+            "planStart": "2023-12-08 16:51:04",
+            "planEnd": "2023-12-08 16:55:41",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421744",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": "2023-12-08T16:51:04",
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876444-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "10",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6871977",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "3",
+            "planStart": "2023-12-08 16:51:04",
+            "planEnd": "2023-12-08 16:55:41",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421749",
+            "materialName": "2632202",
+            "materialDescription": "Housing         DFM-40-25",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803395",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "111",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6872101",
+            "operationName": "0039",
+            "operationDesc": "阳极氧化上挂",
+            "qtyInQueue": 111,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "19",
+            "planStart": "2023-12-21 11:07:19",
+            "planEnd": "2023-12-21 11:34:29",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421750",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": "2023-12-13T15:51:03",
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876499-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "98",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6872203",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-12-13 15:51:03",
+            "planEnd": "2023-12-13 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421751",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876515-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "95",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6872303",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-12-13 15:51:03",
+            "planEnd": "2023-12-13 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421799",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_IN_WORK",
+            "priorityText": "!E",
+            "priority": "2024-01-09T15:51:03",
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803443",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "60",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6874452",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 60,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "20",
+            "planStart": "2024-01-09 15:51:03",
+            "planEnd": "2024-01-09 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421752",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876524-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "95",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6872403",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-12-13 15:51:03",
+            "planEnd": "2023-12-13 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421747",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876472-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6872052",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 100,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-12-11 15:51:03",
+            "planEnd": "2023-12-11 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421753",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876533-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "99",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6872415",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-12-14 15:51:03",
+            "planEnd": "2023-12-14 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421754",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803401",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "200",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6872452",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "66",
+            "planStart": "2023-12-14 14:44:20",
+            "planEnd": "2023-12-14 16:16:35",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421755",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803403",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "200",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6872462",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "66",
+            "planStart": "2023-12-14 14:44:20",
+            "planEnd": "2023-12-14 16:16:35",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421756",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876560-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6872467",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 100,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-12-14 15:51:03",
+            "planEnd": "2023-12-14 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421758",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803405",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "45",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6872512",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "15",
+            "planStart": "2023-12-15 16:27:43",
+            "planEnd": "2023-12-15 16:48:29",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421759",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876590-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6872532",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 100,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-12-18 15:51:03",
+            "planEnd": "2023-12-18 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421791",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803436",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "56",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6873709",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 50,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "18",
+            "planStart": "2023-12-27 16:20:24",
+            "planEnd": "2023-12-27 16:46:14",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421761",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_IN_WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876608-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "90",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6872752",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 90,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "30",
+            "planStart": "2023-12-15 15:51:03",
+            "planEnd": "2023-12-15 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421760",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_IN_WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876599-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "37",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6872757",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 37,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "12",
+            "planStart": "2023-12-15 15:51:03",
+            "planEnd": "2023-12-15 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421768",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876672-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "26",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6872957",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 26,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "9",
+            "planStart": "2023-12-19 16:40:24",
+            "planEnd": "2023-12-19 16:52:24",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421774",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876726-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "56",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6873184",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 56,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "18",
+            "planStart": "2023-12-20 16:20:24",
+            "planEnd": "2023-12-20 16:46:14",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421770",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_IN_WORK",
+            "priorityText": "!E",
+            "priority": "2023-12-19T15:51:03",
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876690-2",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                },
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876690-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "50",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6873119",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 50,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "16",
+            "planStart": "2023-12-19 15:51:03",
+            "planEnd": "2023-12-19 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421775",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": "2023-12-21T16:07:03",
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876735-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "76",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6873252",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 76,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "25",
+            "planStart": "2023-12-21 16:07:03",
+            "planEnd": "2023-12-21 16:42:07",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421776",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876744-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "76",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6873257",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 76,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "25",
+            "planStart": "2023-12-21 16:07:03",
+            "planEnd": "2023-12-21 16:42:07",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421777",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876753-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "87",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6873222",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 87,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "29",
+            "planStart": "2023-12-21 15:59:43",
+            "planEnd": "2023-12-21 16:39:50",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421780",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803428",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "10",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6873356",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "3",
+            "planStart": "2023-12-22 16:51:04",
+            "planEnd": "2023-12-22 16:55:41",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421781",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876787-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "10",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6873413",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "3",
+            "planStart": "2023-12-22 16:51:04",
+            "planEnd": "2023-12-22 16:55:41",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421785",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803431",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "32",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6873458",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "11",
+            "planStart": "2023-12-25 16:36:22",
+            "planEnd": "2023-12-25 16:51:08",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421784",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803432",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "98",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6873464",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "32",
+            "planStart": "2023-12-25 15:52:23",
+            "planEnd": "2023-12-25 16:37:36",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421778",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_IN_WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876762-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "6",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6873571",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 6,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "2",
+            "planStart": "2023-12-21 16:20:24",
+            "planEnd": "2023-12-21 16:46:14",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421792",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803437",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "56",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6873715",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 44,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "18",
+            "planStart": "2023-12-27 16:20:24",
+            "planEnd": "2023-12-27 16:46:14",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421793",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_IN_WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803438",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "5",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6874309",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 5,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "2",
+            "planStart": "2023-12-29 16:20:24",
+            "planEnd": "2023-12-29 16:46:14",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421795",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803440",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6874002",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 90,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2024-01-09 15:51:03",
+            "planEnd": "2024-01-09 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421746",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_IN_WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "0480-4169876462-1",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "140",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6874508",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 140,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "46",
+            "planStart": "2023-12-11 14:44:20",
+            "planEnd": "2023-12-11 16:16:35",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421796",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803439",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6874152",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 100,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2023-12-29 15:51:03",
+            "planEnd": "2023-12-29 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421800",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803444",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "103",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6874552",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "34",
+            "planStart": "2024-01-09 15:49:03",
+            "planEnd": "2024-01-09 16:36:33",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421801",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_WAITING",
+            "priorityText": "!E",
+            "priority": "2024-01-16T15:51:03",
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803445",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6874557",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 0,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2024-01-16 15:51:03",
+            "planEnd": "2024-01-16 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421820",
+            "materialName": "2632202",
+            "materialDescription": "Housing         DFM-40-25",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": null,
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803446",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "54",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6874561",
+            "operationName": "0039",
+            "operationDesc": "阳极氧化上挂",
+            "qtyInQueue": 54,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "9",
+            "planStart": "2024-01-25 10:28:29",
+            "planEnd": "2024-01-25 10:41:42",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421821",
+            "materialName": "1556704",
+            "materialDescription": "Bearing cap     DSBX-63-PPV:CO",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": "2024-01-18T15:51:03",
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803448",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "100",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6874591",
+            "operationName": "0025",
+            "operationDesc": "自动喷漆防护、上挂",
+            "qtyInQueue": 100,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "33",
+            "planStart": "2024-01-18 15:51:03",
+            "planEnd": "2024-01-18 16:37:10",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        },
+        {
+            "site": "0480",
+            "shopOrderName": "1363421823",
+            "materialName": "2632202",
+            "materialDescription": "Housing         DFM-40-25",
+            "status": "MTS_READ2WORK",
+            "priorityText": "!E",
+            "priority": "2024-01-26T10:28:29",
+            "batchList": [
+                {
+                    "batch": [
+                        {
+                            "batchId": "04803449",
+                            "batchQty": 1,
+                            "batchSource": "SFC"
+                        }
+                    ]
+                }
+            ],
+            "sfcList": {
+                "sfc": []
+            },
+            "isSoAccessable": true,
+            "quantityReleased": "54",
+            "uom": "ST",
+            "extensionFields": null,
+            "operationId": "6874628",
+            "operationName": "0039",
+            "operationDesc": "阳极氧化上挂",
+            "qtyInQueue": 54,
+            "componentStatus": "NOT_RELEVANT",
+            "ncStatus": "NOT_RELEVANT",
+            "toolStatus": "NOT_RELEVANT",
+            "trolley": null,
+            "remainingDuration": "9",
+            "planStart": "2024-01-26 10:28:29",
+            "planEnd": "2024-01-26 10:41:42",
+            "rawMaterialData": null,
+            "Rawpartno": "",
+            "Rawpartdes": "",
+            "Totalqty": ""
+        }
+    ]
+}

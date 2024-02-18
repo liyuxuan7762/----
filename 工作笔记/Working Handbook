@@ -213,3 +213,111 @@ GROUP BY
 ### 如何删除Data Field Maintenance里面的数据
 将光标放在要删除的行的最后的那个输入框里面，就可以删除了。
 ![MII](assets/DELETE.PNG)
+
+### 确认0件导致订单关闭的问题
+
+由于系统设计中的BUG, 在WAS中允许确认0件，导致ME将订单关闭。
+![MII](assets/CONFBUG.PNG)
+下面展示一旦出现这种订单关闭的情况，应该如何处理。处理主要分为了一下三步：
+![MII](assets/STEP.PNG)
+具体操作如下：
+![MII](assets/STEP01.PNG)
+![MII](assets/STEP02.PNG)
+![MII](assets/STEP03.PNG)
+经过处理后，SFC的状态将会回归正常。需要注意的是，完成这一步后，刚才确认0件的工序需要重新确认。
+![MII](assets/RESULT.PNG)
+
+### 氧化线check list
+* Workbasket界面
+  * 测试订单是否可以正常loading
+  * 创建新订单测传到ME，看是否会影响loading
+  * 测试订单优先级按钮是否可以正确设置订单优先级、取消优先级，并测试是否可以正常loading （需要分别测试不同状态的单子）
+  * 测试挂具选择挂具、订单是否显示正确
+  * 测试是否可以正常选择挂具（需要分别测试部分、可上挂订单）
+  * 测试查询绑定信息按钮显示的绑定信息是否正确
+  * 测试AGV任务是否可以正常呼叫，AGV任务是否可以正常生成
+  * 测试完成AGV按钮，分别需要测试待配送和异常两种情况，多选和单选状态
+  * 强制DOEN按钮是否正常工作
+  * 撤销上挂中按钮，需要测试（部分->上挂中）（可上挂->上挂中）是否工作正常，检查挂具列和上挂数量列
+* M017氧化上挂界面
+  * 测试直接输入挂具号，相关订单号是否自动显示
+  * 扫描订单号是否可以直接上挂
+  * 报工部分测试部分确认和最终确认
+  * 测试撤销是否正常工作（部分，上挂中）
+* 测试SFC Start接口是否正常工作
+* M018氧化下挂界面
+  * 测试是否能够正确解绑
+
+### 更新了WorkCenter的Custom Data字段后在WAS界面不生效
+经过观察代码发现，所有的工作中心配置实际上都已经被缓存到了系统当中。每一次进入workbasket的时候，都会向后端发起请求，获取当前工作中心的alias名。
+```JavaScript
+/**
+ * retrieves the configured viewAlias that is configured on the ME
+ * workcenter from the backend
+ */
+getViewAliasForWorkcenter: function(site, workcenter){
+    var queryUri = "/" + site + "/" + workcenter;
+    var response = getGlobalContext().getWebService().loadJSONData("getWorkcenterViewAlias",null,"GET", queryUri);
+    
+    return response.getData().viewAlias;
+},
+```
+```java
+	/**
+	 * Retrieves the requested data object from the cache. For in case data validity
+	 * is outdated or object is not yet cached it is automatically updated.
+	 * 
+	 * @param site
+	 * @param workcenter
+	 * @return
+	 * @throws BusinessException
+	 */
+	@Path("getCachedWorkcenter/{site}/{workcenter}")
+	@GET
+	public WorkcenterCacheData getCachedWorkcenter(@PathParam("site") String site,
+			@PathParam("workcenter") String workcenter) throws BusinessException {
+		try {
+
+			if (site == null || site.trim().isEmpty() || workcenter == null || workcenter.trim().isEmpty()) {
+				throw new BusinessException(Errors.ERROR_INSUFFICIENT_INPUT.getCode(),
+						"site and workcenter must be given. One or both were empty! site = " + site + ", workcenter ="
+								+ workcenter);
+			}
+
+			// check if we have data in the cache - then we use the cached version - if not
+			// we need to load it via PAPI and cache it
+			WorkcenterCache cache = WorkcenterCache.getInstance();
+			if (cache.isCached(site, workcenter)) {
+				return cache.getCachedItemLeacy(site, workcenter);
+			} else {
+				this.initServiceLocator(site);
+
+				String workcenterRef = Context.convertWorkcenterToWorkcenterRef(workcenter, site);
+				WorkCenterFullConfiguration wcFullConfig = this.getWorkCenterConfigurationService()
+						.readWorkCenter(new ObjectReference(workcenterRef));
+
+				cache.updateCache(site, wcFullConfig);
+				return cache.getCachedItemLeacy(site, workcenter);
+			}
+
+		} catch (Exception e) {
+			this.handleExceptionForUIService(getClass(), "getCachedWorkcenter",
+					"Error reading cached workcenter data for site= " + site + ", workcenter= " + workcenter, e, null,
+					null);
+		}
+
+		return null;
+	}
+```
+
+### 根据订单查询PRT
+要查询工单的PRT，使用下面的SQL语句
+```sql
+SELECT CF.VALUE AS PRT
+FROM SHOP_ORDER SO
+INNER JOIN ROUTER_STEP RS ON RS.ROUTER_BO = SO.PLANNED_ROUTER_BO
+INNER JOIN CUSTOM_FIELDS CF ON CF.HANDLE = RS.ROUTER_COMP_GBO
+WHERE CF.ATTRIBUTE = 'Y_PRT'
+AND SO.SHOP_ORDER = '1364742284'
+AND RS.REPORTING_CENTER_BO = 'WorkCenterBO:0480,C3300716'
+```
