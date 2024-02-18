@@ -164,3 +164,52 @@ WHERE
 ### Eclipse 如何解锁
 用NWA账号进到 NWA 在identity里面可以解锁
 ![MII](assets/UNLOCK.PNG)
+
+### 手持M009物流表达查询逻辑
+首先，物料表单的作用是查询当前的订单应该送往哪一个工作中心。当点击相应的Supply Area后，可以查询到当前Supply Area下所有满足
+下面是对应的SQL语句。简单来说，就是查询所有符合**SFC的下一步工作中心符合给定工作中心条件**的工单，并且根据Supply Area进行分组求和，
+```sql
+SELECT
+    COUNT(S.SFC) AS QTY,
+    CF1.VALUE AS SUPPLY_AREA,
+    CF2.VALUE AS SUPPLY_AREA_DESC
+FROM
+    SFC S
+    LEFT JOIN SHOP_ORDER SO ON S.SHOP_ORDER_BO = SO.HANDLE
+    INNER JOIN ROUTER_STEP RS ON SO.PLANNED_ROUTER_BO = RS.ROUTER_BO
+    INNER JOIN ROUTER_OPERATION RO ON RO.ROUTER_STEP_BO = RS.HANDLE
+    INNER JOIN ROUTER_NEXT_STEP RONEXT ON RS.HANDLE = RONEXT.ROUTER_STEP_BO
+    INNER JOIN ROUTER_STEP RS1 ON RONEXT.NEXT_STEP_BO = RS1.HANDLE
+    LEFT JOIN SFC_DATA SD ON SD.SFC_BO = S.HANDLE
+    AND SD.DATA_FIELD = 'Z_CLOSE_TIME'
+    INNER JOIN CUSTOM_FIELDS CF1 ON CF1.HANDLE = RO.HANDLE
+    AND CF1.ATTRIBUTE = 'Y_SUPPLY_AREA'
+    INNER JOIN CUSTOM_FIELDS CF2 ON CF2.HANDLE = RO.HANDLE
+    AND CF2.ATTRIBUTE = 'Y_SUPPLY_AREA_DESC'
+WHERE
+    S.SITE = '0480'
+    AND SD.DATA_ATTR IS NULL
+    AND CF1.VALUE IS NOT NULL
+    AND CF1.VALUE != ' '
+    AND S.STATUS_BO IN ('StatusBO:0480,401', 'StatusBO:0480,402')
+    AND SO.STATUS_BO IN ('StatusBO:0480,501')
+    AND RS1.REPORTING_CENTER_BO IN (
+        'WorkCenterBO:0480,C3260106',
+        'WorkCenterBO:0480,C3300719',
+        'WorkCenterBO:0480,C3120202'
+    )
+GROUP BY 
+    CF1.VALUE,
+    CF2.VALUE 
+```
+
+> 相关知识: 如何查询当前SFC的下一个工作中心是什么
+> 1. 首先根据SFC到`SFC`表中查询SFC的对应的`ShopOrderBO`
+> 2. 根据`ShopOrderBO`到`ShopOrder`表中查询`PLANNED_ROUTER_BO`
+> 3. 根据`PLANNED_ROUTER_BO`到`ROUTER_NEXT_STEP`表中获取到`NEXT_STEP_BO`
+> 4. 然后根据`NEXT_STEP_BO`到`ROUTER_STEP`中查询`REPORTING_CENTER_BO`字段, 这个字段里面保存的数据就是当前SFC的下一个工作中心
+
+
+### 如何删除Data Field Maintenance里面的数据
+将光标放在要删除的行的最后的那个输入框里面，就可以删除了。
+![MII](assets/DELETE.PNG)
