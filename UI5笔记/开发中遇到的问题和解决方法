@@ -455,3 +455,16 @@ rackStatusPress : function(toolGroup) {
 }
 ```
 > 参考文献：https://sapui5.hana.ondemand.com/sdk/docs/topics/b0fb4de7364f4bcbb053a99aa645affe.html
+
+### 10. 在Java中如何快速创建只有一个元素组成的Map或者List
+```java
+Collections.singletonList(Collections.singletonMap("sfc", sfc))
+```
+如上面的代码所示，创建出的结果是
+```json
+[
+    {
+        'sfc' : sfc
+    }
+]
+```

@@ -413,25 +413,5 @@ ORDER BY CREATE_TIEM
 > `Z_IS_ARRIVED_WORKCENTER`在`Activity Maintaince`里面设置，`ActivityID`为`Z_SYN_AGV_STATE`
 
 
-### 如何设置一个容器中保存多个不同SFC
-首先进入Container Maintaince 中，创建一个新的container类型，然后使用通配符设置所有order都可以绑定到这个container即可
 
-![MII](assets/BIND.PNG)
-
-![MII](assets/PACKING.PNG)
-
-### 如何开启记录日志功能
-进入NWA，选择搜索log configuration，进入页面
-![MII](assets/LOG.PNG)
-选择`Tracing Locations`, 然后选择要记录日志的Java文件的package名称，点击go
-![MII](assets/TRACE.PNG)
-![MII](assets/TRACE1.PNG)
-![MII](assets/TRACE2.PNG)
-修改记录日志级别为`info`
-
-### SAP常用事务代码
-`SU01d`：查看已有权限
-`SU53`：查看缺失缺陷
-`SP01`：查看SPOOLING打印机
-`WE02`：查看iDoc
-
+value	"<?xml version="1.0" encoding="UTF-8"?><Rowsets DateCreated="2024-02-27T15:04:24" EndDate="2022-08-31T14:27:30" StartDate="2022-08-31T14:27:30" Version="15.4 SP1 Patch 38 (Jun 1, 2023)">\n    <Rowset>\n        <Columns>\n            <Column Description="" MaxRange="1" MinRange="0" Name="ORDER_NUMBER" SQLDataType="1" SourceColumn="ORDER_NUMBER"/>\n            <Column Description="" MaxRange="1" MinRange="0" Name="MATERIAL" SQLDataType="1" SourceColumn="MATERIAL"/>\n            <Column Description="" MaxRange="1" MinRange="0" Name="PROJECT" SQLDataType="1" SourceColumn="PROJECT"/>\n            <Column Description="" MaxRange="1" MinRange="0" Name="PROJECT_PATH" SQLDataType="1" SourceColumn="PROJECT_PATH"/>\n        </Columns>\n        <Row>\n            <ORDER_NUMBER>TEST825189</ORDER_NUMBER>\n            <MATERIAL>MATNR825189</MATERIAL>\n            <PROJECT>G1_CS.1475705..A</PROJECT>\n            <PROJECT_PATH>/dfs01/INT/Data/CustomerSolutions/CS/G1_CS/14757xx/1475705/A/3_Assembly/3.2_Construction_documentation</PROJECT_PATH>\n        </Row>\n    </Rowset>\n</Rowsets>" (id=450)	
